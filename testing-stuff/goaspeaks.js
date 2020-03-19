@@ -15,19 +15,21 @@ var options = {
   , pool:     { maxSockets:  Infinity }
   , headers:  { connection:  "keep-alive" }
 };
+
 const fs = require('fs');
-let path = "./file.JSON";
+let path = "./file.json";
+
 graph
   .setOptions(options)
-  .get(userId, function(err, res) {
-    //console.log(res); // { id: '4', name: 'Mark Zuckerberg'... }
-    
-const storeData = (res, path) => {
+  .get("210553450180199/feed?fields=message,message_tags,story_tags", function(err, res) {
     try {
-      fs.writeFile(path, JSON.stringify(res))
-    } catch (err) {
-      console.error(err)
-    }
-  }
-    
-  });
+        console.log(res);
+        fs.writeFileSync(path, JSON.stringify(res, null, 4))
+      } catch (err) {
+        console.error(err)
+      }
+
+    // console.log(res); // { id: '4', name: 'Mark Zuckerberg'... }
+
+    });
+
