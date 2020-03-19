@@ -10,7 +10,7 @@ let wallPost;
 wallPost ={
     "alt_text_custom": `P5E weekly report`,
     "caption": `P5E weekly report. Visit https://www.github.com/kevinam99 for more`,
-    "url": "https://www.facebook.com/images/fb_icon_325x325.png"
+    "url": "https://www.facebook.com/images/fb_icon_325x325.png" // the pic must already be uploaded to the internet
 };
 
 
