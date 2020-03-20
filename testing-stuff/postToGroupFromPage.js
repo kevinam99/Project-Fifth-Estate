@@ -1,10 +1,14 @@
 const graph = require("fbgraph");
+const secrets = require("./secrets.json");
 
-let appId = '211761870180278';
-let secret = 'd34304d06b20598e6090ecf7603576be';
-let access_token = 'EAADAmKcMj7YBAFAWqQ7sWRFwZAnRXp7CwVNOZBvFPftZB78ULbPrgiz0etBLAnKKcsZBuvkTYsbjkb933vmZAZBbLRlpm3bsvvfBTQW5GpXYfZBEPtXfFJ9ld64ly4o5loTuMY4xNEW07zR9K22RH8B1m0otPAUWOhYUbKRp7C1xZBJiEhpAsej0GIuI240HZApUhZAZAv9ovNuawv4Gc2tKz10';
-let userId = "3492229184147401"; // aditya's fake group
+
+let appId = secrets.app.id;
+let secret = secrets.app.secret;
+let access_token = secrets.page.access_token;
+let userId = secrets.groups.aditya; 
 graph.setAccessToken(access_token);
+
+
 let wallPost;
 
 wallPost ={

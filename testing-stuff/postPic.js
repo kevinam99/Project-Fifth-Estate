@@ -1,9 +1,11 @@
 const graph = require("fbgraph");
+const secrets = require("./secrets.json");
 
-let appId = '211761870180278';
-let secret = 'd34304d06b20598e6090ecf7603576be';
-let access_token = 'EAADAmKcMj7YBAO2cHbk0g57VeVRcPaujHV7mLRqkCVArFcLhNZBZClNSYQQjEtTZBUxaVxzeLR0owfB9GjYEfhlZBGZBdk6cCcEZCkx7vUIk8HHmKfvEdsveBrIGEKlnt5R5AnQkXxPHdbeeBx5zqvRNypE71ZBx2PTDBhv0j2CoVugkFKv6BApoNlrdnQ1fNC4wjHZAacbyjj1Kr8N2ZBnSqb3055IDQ0tcZB0OM0uhqx1Gje0rEgd6cY';
-let userId = "210553450180199"; // kevin's fake group
+
+let appId = secrets.app.id;
+let secret = secrets.app.secret;
+let access_token = secrets.page.access_token;
+let userId = secrets.groups.aditya; 
 graph.setAccessToken(access_token);
 let wallPost;
 
@@ -64,7 +66,8 @@ function postStatusWithPic()
     
     graph.post(`${userId}/feed?access_token=${access_token}`, wallPost, function(err, res) {
         // returns the post id
-        console.log(res); // { id: xxxxx}
+        console.log(res);
+        // { id: xxxxx}
         // console.log(err.type);
     });
 }
