@@ -70,4 +70,4 @@ function postStatusWithPic()
 }
 
 // postOnlyPic()
-postStatusWithPic()
+postStatusWithPic() //still unsuccessful
