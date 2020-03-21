@@ -11,6 +11,8 @@ testing-stuff/seccc.js
 testing-stuff/package-lock.json
 testing-wth-node-sdk/package-lock.json
 testing-wth-node-sdk/file.json
+testing-wth-node-sdk/file2.json
+testing-wth-node-sdk/longLived*.json
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
