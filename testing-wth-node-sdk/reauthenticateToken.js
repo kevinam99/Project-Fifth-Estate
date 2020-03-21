@@ -36,9 +36,7 @@ function getLongLivedUserAccessToken()
     });
 }
 
-//above function works fine
 
-//the below function has issues. Possibly the api call is wrong
 
 
 function getLongLivedPageAccessToken(userAccessToken)
