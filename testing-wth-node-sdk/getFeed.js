@@ -7,14 +7,11 @@ FB.options({version: 'v6.0'});
 const port = process.env.PORT || 5000
 express_app.use(bodyParser.urlencoded({ extended: false }));
 express_app.use(bodyParser.json());
-express_app.get('/', (req, res) => {
-  // console.log(res.connection.parser)
-  console.log(req.query['hub.challenge'])
-  res.send(req.query['hub.challenge'])
-})
+
 
 express_app.post('/', (req, res) => {
-	res.send("Webhook received")
+  res.send("Webhook received")
+  console.log(JSON.stringify(req.body.entry))
 })
 
 let app = FB.extend({appId: secrets.app.id, appSecret: secrets.app.secret})
