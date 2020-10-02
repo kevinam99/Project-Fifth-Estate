@@ -1,7 +1,21 @@
 const FB = require('fb').default;
 const secrets = require('../testing-stuff/secrets.json');
-
+const express_app = require('express')()
+const bodyParser = require('body-parser');
 FB.options({version: 'v6.0'});
+
+const port = process.env.PORT || 5000
+express_app.use(bodyParser.urlencoded({ extended: false }));
+express_app.use(bodyParser.json());
+express_app.get('/', (req, res) => {
+  // console.log(res.connection.parser)
+  console.log(req.query['hub.challenge'])
+  res.send(req.query['hub.challenge'])
+})
+
+express_app.post('/', (req, res) => {
+	res.send("Webhook received")
+})
 
 let app = FB.extend({appId: secrets.app.id, appSecret: secrets.app.secret})
 let page_access_token = secrets.page.access_token;
@@ -30,3 +44,9 @@ FB.api(`/${groupId}/feed`, 'GET', {"fields":"description,full_picture,message,me
       }
     }
   );
+
+
+
+  express_app.listen(port, ()=> {
+    console.log("listening")
+  })
