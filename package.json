@@ -1,0 +1,26 @@
+{
+  "name": "Project-Fifth-Estate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "Sentimental": "^1.0.1",
+    "express": "^4.17.1",
+    "fb": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinam99/Project-Fifth-Estate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinam99/Project-Fifth-Estate/issues"
+  },
+  "homepage": "https://github.com/kevinam99/Project-Fifth-Estate#readme"
+}
