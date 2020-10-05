@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 
-const path = "./file.json"
+const path = "./test.json"
 
 
 const data = fs.readFileSync(path)
@@ -21,8 +21,9 @@ console.log(gregPosts) // greg
 const departments = {
                         goapwd: true, 
                         goaelectricity: true, 
-                        goamunicipality: true, 
-                        goatransport: true
+                        goahealth: true, 
+                        goatransport: true,
+                        goaeducation: true
                     }
 
 gregPosts.forEach(post => {
@@ -30,7 +31,7 @@ gregPosts.forEach(post => {
         const dept = items.name.toLowerCase().split('#')[1]
         if(departments[dept]) // if dept exists
         {
-            console.log(`Complaint => [ ${post.message} ]\ndepartment => ${dept}`)
+            console.log(`Complaint => [ ${post.message} ] \ndepartment => ${dept}`)
         }
     })
 })
