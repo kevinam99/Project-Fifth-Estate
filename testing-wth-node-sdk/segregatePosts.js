@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 
-const path = "./test.json"
+const path = "./file.json"
 
 
 const data = fs.readFileSync(path)
@@ -26,12 +26,64 @@ const departments = {
                         goaeducation: true
                     }
 
+const places = {
+                    mapusa: true,
+                    margao: true,
+                    panjim: true,
+                    ponda: true
+               }
+
+let dept = `unknown`, place = `unknown`, complaint = ``, date, time
+
 gregPosts.forEach(post => {
-    post.message_tags.find(items => {
-        const dept = items.name.toLowerCase().split('#')[1]
-        if(departments[dept]) // if dept exists
+    complaint = post.message
+    date = new Date().toISOString(post.created_time).split('T')[0]
+    time = new Date().toTimeString(post.created_time).split(' ')[0]
+    try {
+        place = post.place.location.city
+        post.message_tags.find(items => {
+            const dept_place = items.name.toLowerCase().split('#')[1]
+            if(departments[dept_place]) // if dept exists
+            {
+                dept = dept_place
+                
+            }
+        })
+    }
+    catch(TypeError) { // TypeError: Cannot read property 'location' of undefined. This error might occur for place in case the user doesn't tag a place in the post
+        post.message_tags.find(items => {
+            const dept_place = items.name.toLowerCase().split('#')[1]
+        if(places[dept_place] && place != `unknown`) // if place exists
+            {
+                place = dept_place
+            }
+        })
+    }
+
+    finally {
+        place = place.split(' ')[0].toLowerCase()
+        if(dept != `unknown` && place != `unknown`)
         {
-            console.log(`Complaint => [ ${post.message} ] \ndepartment => ${dept}`)
+            console.log(`Complaint => [ ${complaint} ] \ndepartment => ${dept} \nplace => ${place}\n`)
         }
-    })
+        else
+        {
+            console.log(`Complaint: [ ${complaint} ]`)
+            if(dept == `unknown`)
+            {
+                console.log(`dept unknown`)
+            }
+
+            if(place == `unknown`)
+            {
+                console.log(`Place unknown`)
+            }
+        }
+        console.log(`Date => ${date}, Time => ${time}\n\n\n\n`)
+        // reinitialise values for next post
+        place = `unknown`
+        dept = `unknown`
+        complaint = `unknown`
+        time = `unknown`
+    }  
 })
