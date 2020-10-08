@@ -9,6 +9,7 @@
     "express": "^4.17.1",
     "express-http-context": "^1.2.4",
     "fb": "^2.0.0",
+    "mongoose": "^5.10.8",
     "winston": "^3.3.3"
   },
   "devDependencies": {},
