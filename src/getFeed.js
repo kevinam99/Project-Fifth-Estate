@@ -1,9 +1,8 @@
 require('dotenv').config()
 const FB = require('fb').default;
-const secrets = require('../testing-stuff/secrets.json')
+// const secrets = require('../testing-stuff/secrets.json')
 const express_app = require('express')()
 const bodyParser = require('body-parser')
-console.log(process.env.API_VERSION)
 FB.options({version: process.env.API_VERSION})
 
 const port = process.env.PORT || 5000
@@ -17,13 +16,13 @@ express_app.post('/', (req, res) => {
   console.log(`IP: ${req.ip}`)
 })
 
-let app = FB.extend({appId: secrets.app.id, appSecret: secrets.app.secret})
-let page_access_token = secrets.page.access_token;
-let groupId = secrets.groups.kevin;
+FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
+let page_access_token = process.env.PAGE_ACCESS_TOKEN
+let groupId = 210553450180199
 
 FB.setAccessToken(page_access_token);
 
-FB.api(`/${groupId}/feed`, 'GET', {"fields":"description,full_picture,message,message_tags,story_tags,created_time,coordinates,name,link,place,picture,status_type,type,attachments{media}"},
+FB.api(`/${groupId}/feed`, 'GET', {"fields":"description,full_picture,message,message_tags,story_tags,created_time,coordinates,name,link,place,picture,status_type,type,attachments{media},comments{message_tags}"},
     function(res) {
       if(res.error)
       {
