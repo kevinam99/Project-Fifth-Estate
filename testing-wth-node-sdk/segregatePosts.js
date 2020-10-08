@@ -37,8 +37,9 @@ let dept = `unknown`, place = `unknown`, complaint = ``, date, time
 
 gregPosts.forEach(post => {
     complaint = post.message
-    date = new Date().toISOString(post.created_time).split('T')[0]
-    time = new Date().toTimeString(post.created_time).split(' ')[0]
+    date = new Date(post.created_time).toISOString().split('T')[0]
+    time = new Date(post.created_time).toTimeString().split(' ')[0]
+    const UNIXTimestamp = new Date(post.created_time).getTime()
     try {
         place = post.place.location.city
         post.message_tags.find(items => {
