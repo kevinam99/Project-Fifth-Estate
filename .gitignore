@@ -5,15 +5,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-testing-stuff/test.js
-testing-stuff/secrets.json
-testing-stuff/seccc.js
-testing-stuff/package-lock.json
-testing-wth-node-sdk/package-lock.json
-testing-wth-node-sdk/file.json
-testing-wth-node-sdk/file2.json
-testing-wth-node-sdk/longLived*.json
-testing-wth-node-sdk/.env
+src/package-lock.json
+src/file.json
+src/file2.json
+src/longLived*.json
+src/.env
 file.json
 test.json
 # Diagnostic reports (https://nodejs.org/api/report.html)
