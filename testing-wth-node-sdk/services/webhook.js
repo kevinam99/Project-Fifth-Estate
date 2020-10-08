@@ -1,5 +1,4 @@
 const FB = require('fb').default;
-const secrets = require('../testing-stuff/secrets.json');
 const express_app = require('express')()
 const bodyParser = require('body-parser');
 const { deepStrictEqual } = require('assert');
@@ -10,7 +9,6 @@ express_app.use(bodyParser.urlencoded({ extended: false }));
 express_app.use(bodyParser.json());
 
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
-let groupId = secrets.groups.kevin;
 const appAccessToken = process.env.APP_ACCESS_TOKEN
 FB.setAccessToken(appAccessToken)// must use app access token only
 
