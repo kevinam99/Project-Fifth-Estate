@@ -56,7 +56,7 @@ const deleteWebhook = fields => {
 
 let callback_url = `https://98ae67c300f3.ngrok.io` // must use https only
 let fields = `posts`
-setWebhook(callback_url, fields)
+// setWebhook(callback_url, fields)
 // deleteWebhook(fields)
 
 // You can manage your webhooks here: https://developers.facebook.com/apps/211761870180278/webhooks/
@@ -66,6 +66,11 @@ express_app.listen(port, () =>{
 })
 
 express_app.get('/', (req, res) => {
-	console.log(req.query['hub.challenge'])
 	res.send(req.query['hub.challenge'])
 })
+
+console.log(new Date(`2020-10-07T13:20:38+0000`).getTime()) // unix timestamp
+console.log(new Date(`2020-10-07T13:20:38+0000`).toTimeString().split(' ')[0]
+)
+console.log(new Date(`2020-10-07T13:20:38+0000`).toISOString().split('T')[0]
+)

@@ -37,7 +37,7 @@ let dept = `unknown`, place = `unknown`, complaint = ``, date, time
 
 gregPosts.forEach(post => {
     complaint = post.message
-    date = new Date(post.created_time).toISOString().split('T')[0]
+    date = new Date(post.created_time).toISOString().split('T')[0] // YYYY-MM-DD
     time = new Date(post.created_time).toTimeString().split(' ')[0]
     const UNIXTimestamp = new Date(post.created_time).getTime()
     try {
