@@ -11,7 +11,7 @@ let groupId = secrets.groups.kevin;
 
 FB.setAccessToken(page_access_token);
 
-var body = 'kevin posted with facebook-node-sdk 1';
+var body = '#greg No electricity for three hours #goaelectricity #ponda';
 FB.api(`${groupId}/feed`, 'post', { message: body }, function (res) {
   if(!res || res.error){
     console.log(!res ? 'error occurred' : res.error);

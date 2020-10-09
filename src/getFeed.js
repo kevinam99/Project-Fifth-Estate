@@ -1,8 +1,15 @@
 require('dotenv').config()
 const FB = require('fb').default;
+<<<<<<< HEAD:testing-wth-node-sdk/getFeed.js
 // const secrets = require('../testing-stuff/secrets.json')
 const express_app = require('express')()
 const bodyParser = require('body-parser')
+=======
+const secrets = require('../testing-stuff/secrets.json')
+const express_app = require('express')()
+const bodyParser = require('body-parser')
+console.log(process.env.API_VERSION)
+>>>>>>> 89da747c610c78c9ac5121b481b7dd5b69e35cd1:src/getFeed.js
 FB.options({version: process.env.API_VERSION})
 
 const port = process.env.PORT || 5000
