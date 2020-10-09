@@ -33,9 +33,9 @@ const segregate = post => {
                         ponda: true
                 }
 
-    let dept = `unknown`, place = `unknown`, complaint = ``, date, time
-
+    let dept = `unknown`, place = `unknown`, complaint = ``, date, time, link = ``;
     gregPosts.forEach(post => {
+        link = `www.facebook.com/${post.id}`;
         complaint = post.message
         date = new Date().toISOString(post.created_time).split('T')[0]
         time = new Date().toTimeString(post.created_time).split(' ')[0]
@@ -81,6 +81,7 @@ const segregate = post => {
             }
 
             return {
+                link,
                 complaint,
                 dept,
                 place,
@@ -90,6 +91,7 @@ const segregate = post => {
             console.log(`Date => ${date}, Time => ${time}\n\n\n\n`)
             // reinitialise values for next post
             place = `unknown`
+            link = `www.facebook.com/`
             dept = `unknown`
             complaint = `unknown`
             time = `unknown`
