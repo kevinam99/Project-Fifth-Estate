@@ -48,4 +48,4 @@ const complaintSchema= new Schema({
 
 const Complaint = mongoose.model('Complaint', complaintSchema);
 
-export default Complaint
+module.exports = Complaint;
