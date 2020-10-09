@@ -13,7 +13,9 @@ src/longLived*.json
 file.json
 test.json
 testing-stuff
-
+src/publishPost.js
+src/reauthenticateToken.js
+src/uploadPic.js
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
