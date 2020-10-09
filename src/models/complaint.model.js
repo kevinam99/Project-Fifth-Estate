@@ -42,6 +42,14 @@ const complaintSchema= new Schema({
         required: true,
         trim: true,
         minlength: 3
+    },
+
+    status:{
+        type: String,
+        enum: [ 'PENDING', 'WORKING_ON', 'RESOLVED'],
+        required: true,
+        trim: true,
+        default: 'PENDING'
     }
 
 })
