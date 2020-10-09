@@ -9,7 +9,7 @@ src/package-lock.json
 src/file.json
 src/file2.json
 src/longLived*.json
-src/env
+.env
 file.json
 test.json
 testing-stuff
