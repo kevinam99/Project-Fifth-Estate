@@ -17,7 +17,7 @@ const getTime = () => {
 	return {since, now}
 }
 
-const getFeed = () => {
+const getFeed = async () => {
 	const {since, now} = getTime()
 	let lastPost
 	const apiParams = {
@@ -47,7 +47,8 @@ const getFeed = () => {
 				}
 				else{
 					console.log(res.data.length)
-					lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed again
+					lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed 
+					console.log(`res.data[0] (from getFeed.js) = ${res.data[0]}`)
 					return res.data
 				}
 			}

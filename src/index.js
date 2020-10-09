@@ -2,7 +2,8 @@ require('dotenv').config()
 const FB = require('fb').default
 const app = require('express')()
 const bodyParser = require('body-parser')
-const webhook = require('./services/webhook')
+const Controller = require('./controller')
+
 FB.options({version: process.env.API_VERSION});
 const PORT = process.env.PORT || 5000
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -14,37 +15,28 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
 
-// function segregate()
+const posts = Controller.feed()
+console.log(`posts.length (from index.js) = ${posts.length}`)
+// posts.then(res => { console.log(`posts.length (from index.js) = ${res}`)})
+// posts.catch(err => console.error(err))
 
-const setWebhook = async () => {
-    let callback_url
-    if(process.env.NODE_ENV == `dev`)
-    {
-        callback_url = `https://96ac44704f9a.ngrok.io/complaint` // must use https only
-    }
+const gregPosts = Controller.greg()
+console.log(`greg posts (from index.js) = ${gregPosts.length}`)
 
-    else if(process.env.NODE_ENV == `production`)
-    {
-        callback_url = process.env.WEBHOOK_CALLBACK_URL // must use https only
-    }
-    
-    const fields = `photos`
-    const object = `user`
-    try {
-       await webhook(callback_url, fields, object)
-       app.get('/complaint', (req, res) => {
-            res.status(200).send(req.query['hub.challenge']).end()
-        })
-    }
-    catch(error)
-    {
-        console.log(error.message)
-    }
-    
+if(gregPosts.length > 0)
+{
+    const {
+        link,
+        complaint,
+        dept,
+        place,
+        time,
+        date
+    } = Controller.segregate()
+    console.log("In if block")
+
 }
-
-setWebhook()
-
+ 
 app.post('/complaint', (req, res) => {
     res.sendStatus(200)
     console.log(`Field => ${req.body.entry[0].changes[0].field}`)
