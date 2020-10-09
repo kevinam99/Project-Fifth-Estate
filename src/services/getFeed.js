@@ -17,47 +17,41 @@ const getTime = () => {
 	return {since, now}
 }
 
-const {since, now} = getTime()
-let lastPost
-console.log(`${now}, ${since} => ${new Date(now).toTimeString()}, ${new Date(since).toTimeString()}`)
-const apiParams = {
-						fields: `description,
-								 full_picture,
-								 message,
-								 message_tags,
-								 story_tags,
-								 created_time,
-								 coordinates,
-								 name,
-								 link,
-								 place,
-								 picture,
-								 status_type,
-								 type,
-								 attachments{media},
-								 comments{message_tags}`,
-						since: since,
-						until: now
-				}
+const getFeed = () => {
+	const {since, now} = getTime()
+	let lastPost
+	const apiParams = {
+							fields: `description,
+									full_picture,
+									message,
+									message_tags,
+									story_tags,
+									created_time,
+									coordinates,
+									name,
+									link,
+									place,
+									picture,
+									status_type,
+									type,
+									attachments{media},
+									comments{message_tags}`,
+							since: since,
+							until: now
+					}
 
-FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
-			if(res.error)
-			{
-				console.error(res.error)
-			}
-			else{
-				console.log(res.data.length)
-				lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed again
-			// console.log(JSON.stringify(res.data[0], null, 4));
-				try {
-					// writing feed to file
-						const fs = require('fs');
-						let path = "./file.json";
-						fs.writeFileSync(path, JSON.stringify(res.data, null, 4))
-					} 
-				catch (err){
-					console.error(err)
+	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
+				if(res.error)
+				{
+					console.error(res.error)
+				}
+				else{
+					console.log(res.data.length)
+					lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed again
+					return res.data
 				}
 			}
-		}
-	)
+		)
+}
+
+module.exports = getFeed
