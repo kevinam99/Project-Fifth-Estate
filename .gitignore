@@ -16,6 +16,7 @@ testing-stuff
 src/publishPost.js
 src/reauthenticateToken.js
 src/uploadPic.js
+src/services/webhook.js
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
