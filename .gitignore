@@ -9,9 +9,11 @@ src/package-lock.json
 src/file.json
 src/file2.json
 src/longLived*.json
-src/.env
+.env
 file.json
 test.json
+testing-stuff
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
