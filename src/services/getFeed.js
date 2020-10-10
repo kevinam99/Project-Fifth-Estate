@@ -18,6 +18,7 @@ const getTime = () => {
 }
 
 const getFeed = async () => {
+	return new Promise((resolve, reject) => {
 	const {since, now} = getTime()
 	let lastPost
 	const apiParams = {
@@ -43,16 +44,17 @@ const getFeed = async () => {
 	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
 				if(res.error)
 				{
-					console.error(res.error)
+					reject(res.error)
 				}
 				else{
 					console.log(res.data.length)
-					lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed 
+					if(res.data.length > 0) lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed 
 					console.log(`res.data[0] (from getFeed.js) = ${res.data[0]}`)
-					return res.data
+					resolve(res.data)
 				}
 			}
 		)
+	})
 }
 
 module.exports = getFeed

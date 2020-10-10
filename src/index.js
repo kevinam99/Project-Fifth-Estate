@@ -2,7 +2,8 @@ require('dotenv').config()
 const FB = require('fb').default
 const app = require('express')()
 const bodyParser = require('body-parser')
-const Controller = require('./controller')
+
+const getFeed = require('./services/getFeed')
 
 FB.options({version: process.env.API_VERSION});
 const PORT = process.env.PORT || 5000
@@ -15,27 +16,39 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
 
-const posts = Controller.feed()
-console.log(`posts.length (from index.js) = ${posts.length}`)
+const main = async () => {
+    try {
+        const posts = await getFeed()
+        console.log(`posts.length (from index.js) = ${posts.length}`)
+        if(posts.length > 0) {
+            
+        }
+    }
+    catch(err) {
+        console.error(err)
+    }
+}
+
+main()
 // posts.then(res => { console.log(`posts.length (from index.js) = ${res}`)})
 // posts.catch(err => console.error(err))
 
-const gregPosts = Controller.greg()
-console.log(`greg posts (from index.js) = ${gregPosts.length}`)
+// const gregPosts = Controller.greg()
+// console.log(`greg posts (from index.js) = ${gregPosts.length}`)
 
-if(gregPosts.length > 0)
-{
-    const {
-        link,
-        complaint,
-        dept,
-        place,
-        time,
-        date
-    } = Controller.segregate()
-    console.log("In if block")
+// if(gregPosts.length > 0)
+// {
+//     const {
+//         link,
+//         complaint,
+//         dept,
+//         place,
+//         time,
+//         date
+//     } = Controller.segregate()
+//     console.log("In if block")
 
-}
+// }
  
 app.post('/complaint', (req, res) => {
     res.sendStatus(200)
