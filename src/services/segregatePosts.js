@@ -1,6 +1,6 @@
-const gregPosts = (post) => {
+const filterGregPosts = (post) => {
     // segregating based on #greg
-    const hastagPosts = post.data.filter(e => 'message_tags' in e)
+    const hastagPosts = post.filter(e => 'message_tags' in e)
     const gregPosts = hastagPosts.filter(e => e.message_tags.find(items => {
         
         return items.name.toLowerCase() == "#greg"
@@ -31,7 +31,7 @@ const segregate = async (gregPosts) => {
                 }
 
     let dept = `unknown`, place = `unknown`, complaint = ``, date, time, link = ``;
-    gregPosts.forEach(post => {
+    for(post in gregPosts) {
         // reinitialise values for next post
         place = `unknown`
         link = `unknown`
@@ -86,7 +86,7 @@ const segregate = async (gregPosts) => {
             
             
         }  
-    })
+    }
     return {
         link,
         complaint,
@@ -97,4 +97,6 @@ const segregate = async (gregPosts) => {
     }
 }
 
-module.exports = {gregPosts, segregate}
+module.exports = {
+    filterGregPosts, 
+    segregate}

@@ -4,6 +4,7 @@ const app = require('express')()
 const bodyParser = require('body-parser')
 
 const getFeed = require('./services/getFeed')
+const {filterGregPosts, segregate} = require('./services/segregatePosts')
 
 FB.options({version: process.env.API_VERSION});
 const PORT = process.env.PORT || 5000
@@ -19,9 +20,13 @@ app.listen(PORT, () => {
 const main = async () => {
     try {
         const posts = await getFeed()
-        console.log(`posts.length (from index.js) = ${posts.length}`)
+        console.log(`posts.length (from index.js) = ${posts.length}. Ending execution here`)
         if(posts.length > 0) {
-            
+            const filteredGregPosts = await filterGregPosts(posts)
+            console.log(`greg posts (from index.js) = ${filteredGregPosts.length}`)
+        }
+        else {
+            // exit
         }
     }
     catch(err) {
