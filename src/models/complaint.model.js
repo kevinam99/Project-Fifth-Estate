@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const complaintSchema= new Schema({
+const complaintSchema= new Schema([{
     postLink: {
         type: String,
         required: true,
@@ -52,7 +52,7 @@ const complaintSchema= new Schema({
         default: 'PENDING'
     }
 
-})
+}])
 
 const Complaint = mongoose.model('Complaint', complaintSchema);
 
