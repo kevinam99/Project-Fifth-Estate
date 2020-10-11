@@ -25,17 +25,17 @@ const main = async () => {
 			`posts.length (from index.js) = ${posts.length}. Ending execution here`
 		);
 		if (posts.length > 0) {
-			// const filteredGregPosts = await filterGregPosts(posts);
-			// console.log(
-			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
-			// );
-			// // console.log(filteredGregPosts)
-			// console.log("Segregating Posts");
-			// const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
+			const filteredGregPosts = await filterGregPosts(posts);
+			console.log(
+				`greg posts (from index.js) = ${filteredGregPosts.length}`
+			);
+			// console.log(filteredGregPosts)
+			console.log("Segregating Posts");
+			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
 
-			// console.log("storing segregated posts to db");
-			// const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
-			// console.log(saved);
+			console.log("storing segregated posts to db");
+			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
+			console.log(saved);
 		} else {
 			// exit
 		}
