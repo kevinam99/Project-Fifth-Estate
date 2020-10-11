@@ -11,7 +11,6 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-
 FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
@@ -31,11 +30,11 @@ const main = async () => {
 				`greg posts (from index.js) = ${filteredGregPosts.length}`
 			);
 			// console.log(filteredGregPosts)
-			console.log("Segregating Posts");                       
-			const segregatedPosts = await segregate(filteredGregPosts);     //segregates posts and returns an array of obj containing all the posts
-			
+			console.log("Segregating Posts");
+			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
+
 			console.log("storing segregated posts to db");
-			const saved = await storePosts(segregatedPosts);        //the array of posts is stored to the db
+			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
 			console.log(saved);
 		} else {
 			// exit
@@ -74,5 +73,12 @@ app.post("/complaint", (req, res) => {
 	console.log(`Date: ${date} \nTime: ${time}`);
 });
 
-// //for adding new departments
-// app.post("/hashtag", ((req, res) = {}));
+//for adding new departments
+// app.post("/hashtag", (req, res) => {
+// 	const dept = createNewTag(req.param.tagName);
+// 	if (dept) {
+// 		res.sendStatus(200);
+// 	} else {
+// 		res.sendStatus(500);
+// 	}
+// });
