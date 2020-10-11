@@ -5,7 +5,7 @@ const Complaint = require("../models/complaint.model");
 const PORT = process.env.PORT || 3030;
 const app = require("express")();
 const bodyParser = require("body-parser");
-const { error } = require("winston");
+
 
 app.use(bodyParser.json);
 app.listen(PORT, () => {
