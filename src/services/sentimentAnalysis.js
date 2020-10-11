@@ -17,7 +17,7 @@ const negativity = require('Sentimental').negativity;
 // }) 
 
 
-let sentiment = (message) =>{
+const sentiment = (message) =>{
     return negativity(message).score
 }
 

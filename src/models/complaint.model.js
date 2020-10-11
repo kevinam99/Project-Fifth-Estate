@@ -17,7 +17,7 @@ const complaintSchema= new Schema([{
     },
 
     pictureLink: {
-        type: String,
+        type: Number,
         required: true,
         trim: true,
         minlength: 3

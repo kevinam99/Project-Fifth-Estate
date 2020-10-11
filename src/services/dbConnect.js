@@ -5,7 +5,6 @@ const Complaint = require("../models/complaint.model");
 const PORT = process.env.PORT || 3030;
 const app = require("express")();
 const bodyParser = require("body-parser");
-const { db } = require("../models/complaint.model");
 app.use(bodyParser.json);
 app.listen(PORT, () => {
 	console.log("Listening....");
