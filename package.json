@@ -10,11 +10,12 @@
     "express-http-context": "^1.2.4",
     "fb": "^2.0.0",
     "mongoose": "^5.10.8",
+    "nodemon": "^2.0.4",
     "winston": "^3.3.3"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node src/index.js"
+    "start dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
