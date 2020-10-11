@@ -1,5 +1,5 @@
 const Complaint = require("../models/complaint.model");
-const Sentiment = require("./sentimentAnalysis");
+const negativity = require('Sentimental').negativity;
 const filterGregPosts = (post) => {
 	// segregating based on #greg
 	const hastagPosts = post.filter((e) => "message_tags" in e);
@@ -12,16 +12,27 @@ const filterGregPosts = (post) => {
 	return gregPosts;
 };
 
+const departments = {
+	goapwd: true,
+	goaelectricity: true,
+	goahealth: true,
+	goatransport: true,
+	goaeducation: true,
+};
+
+const createNewTag = (receivedTag) => {
+	console.log(receivedTag)
+	if (!departments[`${receivedTag}`]) {
+		departments[`${receivedTag}`] = true;
+		return departments;
+	}
+	else{
+		return false;
+	}
+};
+
 const segregate = async (gregPosts) => {
 	// segregating based on departments
-
-	const departments = {
-		goapwd: true,
-		goaelectricity: true,
-		goahealth: true,
-		goatransport: true,
-		goaeducation: true,
-	};
 
 	const places = {
 		mapusa: true,
@@ -38,11 +49,11 @@ const segregate = async (gregPosts) => {
 		link = ``;
 
 	let segreatedPosts = []; //array of posts
-	
+
 	gregPosts.forEach( post => {
-		
+
 		// reinitialise values for next post
-		
+
 		place = `unknown`;
 		link = `unknown`;
 		dept = [`unknown`];
@@ -51,7 +62,7 @@ const segregate = async (gregPosts) => {
 		link = `www.facebook.com/${post.id}`;
 		sentiment = 0;
 		complaint = post.message;
-		
+
 		date = new Date(post.created_time).toISOString().split("T")[0];
 		time = new Date(post.created_time).toTimeString().split(" ")[0];
 
@@ -61,7 +72,7 @@ const segregate = async (gregPosts) => {
 				const dept_place = items.name.toLowerCase().split("#")[1];
 				if (departments[dept_place] && dept_place != 'greg') {
 					// if dept exists
-					dept.push(dept_place) 
+					dept.push(dept_place);
 				}
 			});
 		} catch (TypeError) {
@@ -89,25 +100,24 @@ const segregate = async (gregPosts) => {
 					console.log(`Place unknown`);
 				}
 			}
-			
 
 			var obj = {
 				postLink: link,
 				dept: dept,
 				place: place,
-				sentiment: Sentiment(complaint),
+				sentiment: negativity(complaint).score,
 				date: date,
-				time:time,
-				 
+				time: time,
 			};
 			console.log(obj);
 			segreatedPosts.push(obj);
 		}
-	})
+	});
 	return segreatedPosts;
 };
 
 module.exports = {
 	filterGregPosts,
 	segregate,
+	createNewTag
 };

@@ -4,7 +4,7 @@ const app = require("express")();
 const bodyParser = require("body-parser");
 
 const getFeed = require("./services/getFeed");
-const { filterGregPosts, segregate } = require("./services/segregatePosts");
+const { filterGregPosts, segregate, createNewTag } = require("./services/segregatePosts");
 const storePosts = require("./services/dbConnect");
 
 const PORT = process.env.PORT || 5000;
@@ -25,17 +25,17 @@ const main = async () => {
 			`posts.length (from index.js) = ${posts.length}. Ending execution here`
 		);
 		if (posts.length > 0) {
-			const filteredGregPosts = await filterGregPosts(posts);
-			console.log(
-				`greg posts (from index.js) = ${filteredGregPosts.length}`
-			);
-			// console.log(filteredGregPosts)
-			console.log("Segregating Posts");
-			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
+			// const filteredGregPosts = await filterGregPosts(posts);
+			// console.log(
+			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
+			// );
+			// // console.log(filteredGregPosts)
+			// console.log("Segregating Posts");
+			// const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
 
-			console.log("storing segregated posts to db");
-			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
-			console.log(saved);
+			// console.log("storing segregated posts to db");
+			// const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
+			// console.log(saved);
 		} else {
 			// exit
 		}
@@ -74,11 +74,13 @@ app.post("/complaint", (req, res) => {
 });
 
 //for adding new departments
-// app.post("/hashtag", (req, res) => {
-// 	const dept = createNewTag(req.param.tagName);
-// 	if (dept) {
-// 		res.sendStatus(200);
-// 	} else {
-// 		res.sendStatus(500);
-// 	}
-// });
+app.put("/hashtag", (req, res) => {
+	const dept = createNewTag(req.body.tagName);
+	console.log(dept)
+	if (dept) {
+		res.sendStatus(200);
+		
+	} else {
+		res.sendStatus(500);
+	}
+});
