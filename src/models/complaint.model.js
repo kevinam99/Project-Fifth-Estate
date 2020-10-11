@@ -10,7 +10,7 @@ const complaintSchema= new Schema([{
     },
 
     dept: {
-        type: String,
+        type: Array,
         required: true,
         trim: true,
         minlength: 3
@@ -18,7 +18,7 @@ const complaintSchema= new Schema([{
 
     pictureLink: {
         type: Number,
-        required: true,
+        required: false,
         trim: true,
         minlength: 3
     },
@@ -27,7 +27,7 @@ const complaintSchema= new Schema([{
         type: String,
         required: true,
         trim: true,
-        minlength: 3
+        minlength: 1
     },
 
     date: { // format is YYYY-MM-DD

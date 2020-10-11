@@ -1,3 +1,4 @@
+const Complaint = require("../models/complaint.model");
 const Sentiment = require("./sentimentAnalysis");
 const filterGregPosts = (post) => {
 	// segregating based on #greg
@@ -37,17 +38,20 @@ const segregate = async (gregPosts) => {
 		link = ``;
 
 	let segreatedPosts = []; //array of posts
-
-	for (post in gregPosts) {
+	
+	gregPosts.forEach( post => {
+		
 		// reinitialise values for next post
+		
 		place = `unknown`;
 		link = `unknown`;
-		dept = `unknown`;
+		dept = [`unknown`];
 		complaint = `unknown`;
 		time = `unknown`;
 		link = `www.facebook.com/${post.id}`;
 		sentiment = 0;
 		complaint = post.message;
+		
 		date = new Date(post.created_time).toISOString().split("T")[0];
 		time = new Date(post.created_time).toTimeString().split(" ")[0];
 
@@ -55,9 +59,9 @@ const segregate = async (gregPosts) => {
 			place = post.place.location.city;
 			post.message_tags.find((items) => {
 				const dept_place = items.name.toLowerCase().split("#")[1];
-				if (departments[dept_place]) {
+				if (departments[dept_place] && dept_place != 'greg') {
 					// if dept exists
-					dept = dept_place;
+					dept.push(dept_place) 
 				}
 			});
 		} catch (TypeError) {
@@ -85,18 +89,21 @@ const segregate = async (gregPosts) => {
 					console.log(`Place unknown`);
 				}
 			}
+			
 
-			let obj = {
+			var obj = {
 				postLink: link,
 				dept: dept,
+				place: place,
 				sentiment: Sentiment(complaint),
 				date: date,
-				time: time,
+				time:time,
+				 
 			};
-
+			console.log(obj);
 			segreatedPosts.push(obj);
 		}
-	}
+	})
 	return segreatedPosts;
 };
 

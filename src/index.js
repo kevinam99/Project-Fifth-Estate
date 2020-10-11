@@ -30,10 +30,10 @@ const main = async () => {
 			console.log(
 				`greg posts (from index.js) = ${filteredGregPosts.length}`
 			);
-
+			// console.log(filteredGregPosts)
 			console.log("Segregating Posts");                       
-			const segregatedPosts = segregate(filterGregPosts);     //segregates posts and returns an array of obj containing all the posts
-
+			const segregatedPosts = await segregate(filteredGregPosts);     //segregates posts and returns an array of obj containing all the posts
+			
 			console.log("storing segregated posts to db");
 			const saved = await storePosts(segregatedPosts);        //the array of posts is stored to the db
 			console.log(saved);
