@@ -2,16 +2,6 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const Complaint = require("../models/complaint.model");
 
-const PORT = process.env.PORT || 3030;
-const app = require("express")();
-const bodyParser = require("body-parser");
-
-
-app.use(bodyParser.json);
-app.listen(PORT, () => {
-	console.log("Listening....");
-});
-
 //db connection
 const storePosts = async (segregatedPosts) => {
 	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/test?retryWrites=true&w=majority`;
