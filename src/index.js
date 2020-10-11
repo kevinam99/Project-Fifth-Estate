@@ -7,11 +7,12 @@ const getFeed = require("./services/getFeed");
 const { filterGregPosts, segregate } = require("./services/segregatePosts");
 const storePosts = require("./services/dbConnect");
 
-FB.options({ version: process.env.API_VERSION });
 const PORT = process.env.PORT || 5000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
+FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
 app.listen(PORT, () => {
