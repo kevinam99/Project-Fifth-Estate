@@ -74,5 +74,5 @@ app.post("/complaint", (req, res) => {
 	console.log(`Date: ${date} \nTime: ${time}`);
 });
 
-//for adding new departments
-app.post("/hashtag", ((req, res) = {}));
+// //for adding new departments
+// app.post("/hashtag", ((req, res) = {}));

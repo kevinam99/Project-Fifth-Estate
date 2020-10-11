@@ -1,7 +1,7 @@
 {
-  "name": "Project-Fifth-Estate",
+  "name": "project-fifth-estate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Greg App",
   "main": "index.js",
   "dependencies": {
     "Sentimental": "^1.0.1",
@@ -16,7 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "node src/index.js",
-    "start:dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
