@@ -105,6 +105,13 @@ const segregate = async (gregPosts) => {
 				}
 			}
 
+			if(dept.length > 0) {
+				dept = dept.filter(element => { // removing `unknown` from dept list
+					return element != 'unknown'
+				})
+			}
+			 
+
 			var obj = {
 				postLink: link,
 				dept: dept,
@@ -117,6 +124,7 @@ const segregate = async (gregPosts) => {
 			segreatedPosts.push(obj);
 		}
 	});
+	
 	return segreatedPosts;
 };
 
