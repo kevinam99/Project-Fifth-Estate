@@ -105,7 +105,7 @@ const segregate = async (gregPosts) => {
 				}
 			}
 
-			if(dept.length > 0) {
+			if(dept.length > 1) { // excluding the preinitialise ['unknown']
 				dept = dept.filter(element => { // removing `unknown` from dept list
 					return element != 'unknown' 
 				})

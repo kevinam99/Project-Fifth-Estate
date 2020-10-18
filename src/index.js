@@ -35,7 +35,7 @@ const main = async () => {
 
 			console.log("storing segregated posts to db")
 			const saved = await storePosts(segregatedPosts) //the array of posts is stored to the db
-			console.log(saved);
+			console.log(`${saved}...(index.js)`);
 		} else {
 			console.log(`No posts available at this time...(index.js)`)
 		}
