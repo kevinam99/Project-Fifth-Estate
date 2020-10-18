@@ -74,7 +74,7 @@ app.post("/complaint", (req, res) => {
 });
 
 //for adding new departments
-app.put("/hashtag", (req, res) => {
+app.patch("/hashtag", (req, res) => {
 	const dept = createNewTag(req.body.tagName);
 	console.log(dept)
 	if (dept) {
