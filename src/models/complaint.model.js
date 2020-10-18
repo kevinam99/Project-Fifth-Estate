@@ -50,6 +50,9 @@ const complaintSchema= new Schema([{
         required: true,
         trim: true,
         default: 'PENDING'
+    },
+    place: {
+        type: String,
     }
 
 }])
