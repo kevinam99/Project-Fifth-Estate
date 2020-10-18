@@ -79,7 +79,7 @@ const segregate = async (gregPosts) => {
 			// TypeError: Cannot read property 'location' of undefined. This error might occur for place in case the user doesn't tag a place in the post
 			post.message_tags.find((items) => {
 				const dept_place = items.name.toLowerCase().split("#")[1];
-				if (places[dept_place] && place != `unknown`) {
+				if (places[dept_place]) {
 					// if place exists
 					place = dept_place;
 				}

@@ -47,10 +47,10 @@ const getFeed = async () => {
 					reject(res.error)
 				}
 				else{
-					console.log(res.data.length)
+					console.log(res.data)
 					if(res.data.length > 0) {
 						console.log(`res.data[0] (from getFeed.js) = ${res.data[0]} \n`)
-						
+
 						if(lastPostId == undefined) { // running the whole program for the first time
 							lastPostId = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed
 							resolve(res.data)
