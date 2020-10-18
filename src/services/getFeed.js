@@ -20,7 +20,7 @@ const getTime = () => {
 const getFeed = async () => {
 	return new Promise((resolve, reject) => {
 	const {since, now} = getTime()
-	let lastPost
+	let lastPostId
 	const apiParams = {
 							fields: `description,
 									full_picture,
@@ -48,9 +48,25 @@ const getFeed = async () => {
 				}
 				else{
 					console.log(res.data.length)
-					if(res.data.length > 0) lastPost = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed 
-					console.log(`res.data[0] (from getFeed.js) = ${res.data[0]}`)
-					resolve(res.data)
+					if(res.data.length > 0) {
+						console.log(`res.data[0] (from getFeed.js) = ${res.data[0]} \n`)
+						
+						if(lastPostId == undefined) { // running the whole program for the first time
+							lastPostId = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed
+							resolve(res.data)
+						}
+						else if(lastPostId) { // if we know what the last post has been accessed when the program was run the previous time
+							res.data = res.data.filter(posts => {
+								return posts.id != lastPostId
+							})
+							resolve(res.data)
+						}
+						
+					}
+					else {
+						reject(`No posts available at this time...(getFeed.js)`)
+						return;
+					}
 				}
 			}
 		)

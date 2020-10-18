@@ -83,6 +83,10 @@ const segregate = async (gregPosts) => {
 					// if place exists
 					place = dept_place;
 				}
+				if (departments[dept_place] && dept_place != 'greg') {
+					// if dept exists
+					dept.push(dept_place);
+				}
 			});
 		} finally {
 			place = place.split(" ")[0].toLowerCase();
