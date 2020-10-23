@@ -1,6 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 const Complaint = require("../models/complaint.model");
+const logger = require("../logger/logger");
 
 //db connection
 const storePosts = async (segregatedPosts) => {
@@ -14,9 +15,11 @@ const storePosts = async (segregatedPosts) => {
 
 	Complaint.insertMany(segregatedPosts)
 		.then(() => {
+			logger.info(`(dbConnect.js)... Complaints saved to DB.`)
 			console.log("Complaints saved to db");
 		})
 		.catch((err) => {
+			logger.error(`(dbConnect.js)... ${err}`)
 			console.error(err);
 		});
 	// const connection = mongoose.connection;

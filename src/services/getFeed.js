@@ -1,3 +1,5 @@
+const logger = require('../logger/logger');
+
 require('dotenv').config()
 const FB = require('fb').default;
 // const secrets = require('../testing-stuff/secrets.json')
@@ -45,13 +47,14 @@ const getFeed = async () => {
 	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
 				if(res.error)
 				{
+					logger.error(`(getFeed.js)... ${re.error}`)
 					reject(res.error)
 				}
 				else{
 					console.log(res.data)
 					if(res.data.length > 0) {
+						logger.info(`(getFeed.js)... Received ${res.data.length} posts at this time.`)
 						console.log(`res.data[0] (from getFeed.js) = ${res.data[0]} \n`)
-
 						if(lastPostId == undefined) { // running the whole program for the first time
 							lastPostId = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed
 							resolve(res.data)
@@ -65,6 +68,7 @@ const getFeed = async () => {
 						
 					}
 					else {
+						logger.info(`(getFeed.js)... No posts available at this time`)
 						reject(`No posts available at this time...(getFeed.js)`)
 						return;
 					}

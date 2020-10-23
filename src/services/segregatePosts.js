@@ -1,4 +1,5 @@
 const Complaint = require("../models/complaint.model");
+const logger = require("../logger/logger");
 const negativity = require('Sentimental').negativity;
 const filterGregPosts = (post) => {
 	// segregating based on #greg
@@ -8,7 +9,7 @@ const filterGregPosts = (post) => {
 			return items.name.toLowerCase() == "#greg";
 		})
 	);
-
+	logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${gregPosts.length}`)
 	return gregPosts;
 };
 
@@ -33,7 +34,7 @@ const createNewTag = (receivedTag) => {
 
 const segregate = async (gregPosts) => {
 	// segregating based on departments
-
+	logger.info(`(segregatePosts.js)... Segregation begins`)
 	const places = {
 		mapusa: true,
 		margao: true,
@@ -120,6 +121,7 @@ const segregate = async (gregPosts) => {
 				date: date,
 				time: time,
 			};
+			logger.info(`(segregatePosts.js)... Complaint details: ${obj}`)
 			console.log(obj);
 			segreatedPosts.push(obj);
 		}
