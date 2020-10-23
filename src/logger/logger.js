@@ -1,7 +1,7 @@
 const httpContext = require('express-http-context')
 const winston = require('winston')
 
-const dateTime = new Date().toISOString()
+let dateTime = new Date().toISOString()
 const requestIdFormat = winston.format((info, opts) => {
   const reqId = httpContext.get('reqId')
   info.reqId = reqId
@@ -10,14 +10,13 @@ const requestIdFormat = winston.format((info, opts) => {
 
 const logger = winston.createLogger({
   format: winston.format.combine(
-    winston.format.simple(),
     winston.format.timestamp(),
-    winston.format.json(),
+    winston.format.simple(),
     requestIdFormat()
   ),
   transports: [
     new winston.transports.File({
-      filename: `${__dirname}/../../logs/app-${dateTime}.log`,
+      filename: `${__dirname}/../../logs/app.log`,
       handleExceptions: true,
       level: 'info',
       maxsize: 10000000,

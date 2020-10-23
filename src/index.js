@@ -48,7 +48,7 @@ const main = async () => {
 			console.log(`No posts available at this time...(index.js)`)
 		}
 	} catch (err) {
-		logger.error(`(index.js)... ${err}`)
+		logger.error(`(index.js)... Error: ${err}`)
 		console.error(err);
 	}
 };
