@@ -28,6 +28,12 @@ const main = async () => {
 			`posts.length (from index.js) = ${posts.length}.`
 		)
 		if (posts.length > 0) {
+			// const filteredGregPosts = await filterGregPosts(posts)
+			// logger.info(`(index.js)... greg posts = ${filteredGregPosts.length}`)
+			// console.log(
+			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
+			// )
+			// console.log(filteredGregPosts)
 			logger.info("(index.js)... Segregating Posts")
 			console.log("Segregating Posts");
 			const segregatedPosts = await segregate(posts); //segregates posts and returns an array of obj containing all the posts
