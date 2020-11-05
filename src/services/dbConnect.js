@@ -15,11 +15,11 @@ const storePosts = async (segregatedPosts) => {
 
 	Complaint.insertMany(segregatedPosts)
 		.then(() => {
-			logger.info(`(dbConnect.js)... Complaints saved to DB.`)
+			logger.info(`(dbConnect.js)... Complaints saved to DB.`);
 			console.log("Complaints saved to db");
 		})
 		.catch((err) => {
-			logger.error(`(dbConnect.js)... ${err}`)
+			logger.error(`(dbConnect.js)... ${err}`);
 			console.error(err);
 		});
 	// const connection = mongoose.connection;
@@ -44,5 +44,14 @@ const storePosts = async (segregatedPosts) => {
 
 	return 1;
 };
+const fetchPosts = async (date) => {
+	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
+	mongoose.connect(mongo_uri, {
+		useNewUrlParser: true,
+		useCreateIndex: true,
+		useUnifiedTopology: true,
+	});
 
-module.exports = storePosts;
+	return Complaint.find({})
+};
+module.exports = { storePosts, fetchPosts };
