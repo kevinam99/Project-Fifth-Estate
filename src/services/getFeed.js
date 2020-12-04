@@ -6,7 +6,8 @@ const FB = require('fb').default;
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
 FB.options({version: process.env.API_VERSION});
 let page_access_token = process.env.PAGE_ACCESS_TOKEN
-let groupId = 210553450180199
+//let groupId = 210553450180199
+let groupId = 3404910139597459
 
 FB.setAccessToken(page_access_token)
 

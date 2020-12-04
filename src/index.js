@@ -24,38 +24,6 @@ app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
 });
 
-const main = async () => {
-	try {
-		const posts = await getFeed();
-		logger.info(`(index.js)...posts.length = ${posts.length}.`);
-		console.log(`posts.length (from index.js) = ${posts.length}.`);
-		if (posts.length > 0) {
-			const filteredGregPosts = await filterGregPosts(posts);
-			logger.info(
-				`(index.js)... greg posts = ${filteredGregPosts.length}`
-			);
-			console.log(
-				`greg posts (from index.js) = ${filteredGregPosts.length}`
-			);
-			// console.log(filteredGregPosts)
-			logger.info("(index.js)... Segregating Posts");
-			console.log("Segregating Posts");
-			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
-
-			logger.info("(index.js)... Storing segregated posts to db");
-			console.log("storing segregated posts to db");
-			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
-			logger.info(`(index.js)... Posts saved to DB`);
-			console.log(`${saved}...(index.js)`);
-		} else {
-			logger.info(`(index.js)... No posts available at this time`);
-			console.log(`No posts available at this time...(index.js)`);
-		}
-	} catch (err) {
-		logger.error(`(index.js)... Error: ${err}`);
-		console.error(err);
-	}
-};
 
 //main();
 // posts.then(res => { console.log(`posts.length (from index.js) = ${res}`)})
@@ -107,3 +75,38 @@ app.get("/issues", async(req, res) => {
 		console.error(error);
 	}
 });
+
+app.get("/posts", async(req,res)=>{
+	try {
+		const posts = await getFeed();
+		logger.info(`(index.js)...posts.length = ${posts.length}.`);
+
+		if (posts.length > 0) {
+			const filteredGregPosts = await filterGregPosts(posts);
+			logger.info(
+				`(index.js)... greg posts = ${filteredGregPosts.length}`
+			);
+			// console.log(
+			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
+			// );
+			// console.log(filteredGregPosts)
+			logger.info("(index.js)... Segregating Posts");
+			// console.log("Segregating Posts");
+
+			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
+
+			logger.info("(index.js)... Storing segregated posts to db");
+			//console.log("storing segregated posts to db");
+			
+			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
+			logger.info(`(index.js)... Posts saved to DB`);
+			res.send(`Saved ${saved}...(index.js)`+ `\r\n${JSON.stringify(segregatedPosts,null,4)}`);
+		} else {
+			logger.info(`(index.js)... No posts available at this time`);
+			res.send(`No posts available at this time...(index.js)`);
+		}
+	} catch (err) {
+		logger.error(`(index.js)... Error: ${err}`);
+		res.send(err);
+	}
+})
