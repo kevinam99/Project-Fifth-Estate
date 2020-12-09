@@ -27,27 +27,6 @@ app.listen(PORT, () => {
 });
 
 
-//main();
-// posts.then(res => { console.log(`posts.length (from index.js) = ${res}`)})
-// posts.catch(err => console.error(err))
-
-// const gregPosts = Controller.greg()
-// console.log(`greg posts (from index.js) = ${gregPosts.length}`)
-
-// if(gregPosts.length > 0)
-// {
-//     const {
-//         link,
-//         complaint,
-//         dept,
-//         place,
-//         time,
-//         date
-//     } = Controller.segregate()
-//     console.log("In if block")
-
-// }
-
 app.post("/complaint", (req, res) => {
 	res.sendStatus(200);
 	console.log(`Field => ${req.body.entry[0].changes[0].field}`);
