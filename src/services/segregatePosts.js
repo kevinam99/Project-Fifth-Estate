@@ -60,7 +60,7 @@ const segregate = async (gregPosts) => {
 		dept = [`unknown`];
 		complaint = `unknown`;
 		time = `unknown`;
-		link = `www.facebook.com/${post.id}`;
+		link = `https://www.facebook.com/${post.id}`;
 		sentiment = 0;
 		complaint = post.message;
 

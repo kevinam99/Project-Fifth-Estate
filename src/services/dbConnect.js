@@ -5,7 +5,7 @@ const logger = require("../logger/logger");
 
 //db connection
 const storePosts = async (segregatedPosts) => {
-	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
+	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`;
 
 	mongoose.connect(mongo_uri, {
 		useNewUrlParser: true,

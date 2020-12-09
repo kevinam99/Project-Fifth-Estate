@@ -2,6 +2,7 @@ require("dotenv").config();
 const FB = require("fb").default;
 const app = require("express")();
 const bodyParser = require("body-parser");
+const cors = require('cors')
 
 const getFeed = require("./services/getFeed");
 const {
@@ -15,6 +16,7 @@ const logger = require("./logger/logger");
 const PORT = process.env.PORT || 5000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors());
 
 FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
@@ -65,7 +67,7 @@ app.patch("/hashtag", (req, res) => {
 	}
 });
 
-app.get("/issues", async(req, res) => {
+app.get("/dbposts", async(req, res) => {
 	console.log("Fetching Issues from DB")
 	try {
 		const issues = await fetchPosts("2020-10-18");
