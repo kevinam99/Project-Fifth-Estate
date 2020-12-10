@@ -1,6 +1,6 @@
 const Complaint = require("../models/complaint.model");
 const logger = require("../logger/logger");
-const negativity = require('Sentimental').negativity;
+const negativity = require('Sentimental').analyse;
 const filterGregPosts = (post) => {
 	// segregating based on #greg
 	const hastagPosts = post.filter((e) => "message_tags" in e);
