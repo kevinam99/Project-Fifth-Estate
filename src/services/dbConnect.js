@@ -22,30 +22,11 @@ const storePosts = async (segregatedPosts) => {
 			logger.error(`(dbConnect.js)... ${err}`);
 			console.error(err);
 		});
-	// const connection = mongoose.connection;
-
-	// connection
-	// 	.once("open", () => {
-	// 		//connected {db operations inside this method only}
-	// 		console.log("Connected to MongoDB!");
-	// 		let issue = new Complaint(segregatedPosts);
-
-	// 		issue.save((err, issue) => {
-	// 			if (err) return console.error(err);
-
-	// 			console.log(issue);
-	// 		});
-	// 	})
-	// 	.catch((error) => {
-	// 		// handling a rejected promise
-	// 		console.log("Mongo not connected");
-	// 		console.error(error);
-	// 	});
 
 	return 1;
 };
 const fetchPosts = async (date) => {
-	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
+	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`;
 	mongoose.connect(mongo_uri, {
 		useNewUrlParser: true,
 		useCreateIndex: true,
