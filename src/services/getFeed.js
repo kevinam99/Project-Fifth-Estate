@@ -48,7 +48,7 @@ const getFeed = async () => {
 	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
 				if(res.error)
 				{
-					logger.error(`(getFeed.js)... ${re.error}`)
+					logger.error(`(getFeed.js)... ${res.error}`)
 					reject(res.error)
 				}
 				else{
