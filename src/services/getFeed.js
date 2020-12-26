@@ -6,8 +6,8 @@ const FB = require('fb').default;
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
 FB.options({version: process.env.API_VERSION});
 let page_access_token = process.env.PAGE_ACCESS_TOKEN
-//let groupId = 210553450180199
-let groupId = 3404910139597459
+//let groupId = 210553450180199 - kevin test group
+//let groupId = 3404910139597459 - minal test group
 
 FB.setAccessToken(page_access_token)
 
@@ -21,7 +21,7 @@ const getTime = () => {
 	return {since, now}
 }
 
-const getFeed = async () => {
+const getFeed = async (groupId) => {
 	return new Promise((resolve, reject) => {
 	const {since, now} = getTime()
 	let lastPostId

@@ -59,7 +59,7 @@ app.get("/dbposts", async(req, res) => {
 
 app.get("/posts", async(req,res)=>{
 	try {
-		const posts = await getFeed();
+		const posts = await getFeed(req.body.groupId);
 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
 
 		if (posts.length > 0) {
