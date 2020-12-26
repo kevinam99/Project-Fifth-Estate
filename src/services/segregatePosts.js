@@ -1,6 +1,6 @@
 const Complaint = require("../models/complaint.model");
 const logger = require("../logger/logger");
-const negativity = require('Sentimental').analyse;
+const analyseSentiment = require('Sentimental').analyze;
 const filterGregPosts = (post) => {
 	// segregating based on #greg
 	const hastagPosts = post.filter((e) => "message_tags" in e);
@@ -117,7 +117,7 @@ const segregate = async (gregPosts) => {
 				postLink: link,
 				dept: dept,
 				place: place,
-				sentiment: negativity(complaint).score,
+				sentiment: analyseSentiment(complaint).score,
 				date: date,
 				time: time,
 			};
