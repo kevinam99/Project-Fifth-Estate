@@ -63,10 +63,12 @@ app.get("/posts", async(req,res)=>{
 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
 
 		if (posts.length > 0) {
-			const filteredGregPosts = await filterGregPosts(posts);
-			logger.info(
-				`(index.js)... greg posts = ${filteredGregPosts.length}`
-			);
+			
+			//ignore #greg
+			//const filteredGregPosts = await filterGregPosts(posts);
+			// logger.info(
+			// 	`(index.js)... greg posts = ${filteredGregPosts.length}`
+			// );
 			// console.log(
 			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
 			// );
@@ -74,8 +76,9 @@ app.get("/posts", async(req,res)=>{
 			logger.info("(index.js)... Segregating Posts");
 			// console.log("Segregating Posts");
 
-			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
-
+			//const segregatedPosts = await segregate(filteredGregPosts); 
+			const segregatedPosts = await segregate(posts); //segregates posts and returns an array of obj containing all the posts
+			
 			logger.info("(index.js)... Storing segregated posts to db");
 			//console.log("storing segregated posts to db");
 			
