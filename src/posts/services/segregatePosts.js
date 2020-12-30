@@ -1,5 +1,5 @@
 const Complaint = require("../models/complaint.model");
-const logger = require("../logger/logger");
+const logger = require("../../logger/logger");
 const analyseSentiment = require('Sentimental').analyze;
 const filterGregPosts = (post) => {
 	// segregating based on #greg

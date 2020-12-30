@@ -1,12 +1,12 @@
 const logger = require('../logger/logger')
 
-const getFeed = require('../services/getFeed')
+const getFeed = require('./services/getFeed')
 const {
     filterGregPosts,
     segregate,
     createNewTag,
-} = require('../services/segregatePosts')
-const { storePosts, fetchPosts } = require('../services/dbConnect')
+} = require('./services/segregatePosts')
+const { storePosts, fetchPosts } = require('./posts.repository')
 
 const extractPosts = async (groupId) => {
     try {

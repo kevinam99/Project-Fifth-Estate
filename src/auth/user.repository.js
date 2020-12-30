@@ -1,4 +1,4 @@
-const User = require('./user.entity')
+const User = require('./user.model')
 const mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`
 const mongoose = require('mongoose')
 const logger = require('../logger/logger')

@@ -1,4 +1,4 @@
-const logger = require('../logger/logger');
+const logger = require('../../logger/logger');
 
 require('dotenv').config()
 const FB = require('fb').default;

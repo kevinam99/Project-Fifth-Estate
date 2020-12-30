@@ -1,8 +1,7 @@
-require('dotenv').config()
-const mongoose = require('mongoose')
-const Complaint = require('../models/complaint.model')
-const logger = require('../logger/logger')
 
+const mongoose = require('mongoose')
+const Complaint = require('./complaint.model')
+const logger = require('../logger/logger')
 const mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`
 
 //db connection
