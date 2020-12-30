@@ -3,6 +3,7 @@ const FB = require("fb").default;
 const app = require("express")();
 const bodyParser = require("body-parser");
 const cors = require('cors')
+const router = require('express').Router()
 
 const getFeed = require("./services/getFeed");
 const {
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
+
 FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
@@ -26,71 +28,6 @@ app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
 });
 
-
-app.post("/complaint", (req, res) => {
-	res.sendStatus(200);
-	console.log(`Field => ${req.body.entry[0].changes[0].field}`);
-	const date = new Date().toISOString(req.body.entry[0].time).split("T")[0];
-	const time = new Date().toTimeString(req.body.entry[0].time).split(" ")[0];
-	console.log(`Date: ${date} \nTime: ${time}`);
-});
-
-//for adding new departments
-app.patch("/hashtag", (req, res) => {
-	const dept = createNewTag(req.body.tagName);
-	console.log(dept);
-	if (dept) {
-		res.sendStatus(200);
-	} else {
-		res.sendStatus(500);
-	}
-});
-
-app.get("/api/dbposts", async(req, res) => {
-	console.log("Fetching Issues from DB")
-	try {
-		const issues = await fetchPosts("2020-10-18");
-		console.log(issues);
-		res.send(issues);
-	} catch (error) {
-		console.error(error);
-	}
-});
-
-app.get("/api/posts", async(req,res)=>{
-	try {
-		const posts = await getFeed(req.body.groupId);
-		logger.info(`(index.js)...posts.length = ${posts.length}.`);
-
-		if (posts.length > 0) {
-			
-			//ignore #greg
-			const filteredGregPosts = await filterGregPosts(posts);
-			logger.info(
-				`(index.js)... greg posts = ${filteredGregPosts.length}`
-			);
-			// console.log(
-			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
-			// );
-			// console.log(filteredGregPosts)
-			logger.info("(index.js)... Segregating Posts");
-			// console.log("Segregating Posts");
-
-			const segregatedPosts = await segregate(filteredGregPosts); 
-			//const segregatedPosts = await segregate(posts); //segregates posts and returns an array of obj containing all the posts
-			
-			logger.info("(index.js)... Storing segregated posts to db");
-			//console.log("storing segregated posts to db");
-			
-			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
-			logger.info(`(index.js)... Posts saved to DB`);
-			res.send(`Saved ${saved}...(index.js)`+ `\r\n${JSON.stringify(segregatedPosts,null,4)}`);
-		} else {
-			logger.info(`(index.js)... No posts available at this time`);
-			res.send(`No posts available at this time...(index.js)`);
-		}
-	} catch (err) {
-		logger.error(`(index.js)... Error: ${err}`);
-		res.send(err);
-	}
-})
+//API Endpoint routes
+app.use('/api/post',require('./posts/posts.controller'))
+app.use('/api/user',require('./auth/auth.controller'))

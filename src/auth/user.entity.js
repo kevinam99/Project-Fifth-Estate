@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const UserEntity = new Schema([
   {
-    userName: {
+    username: {
       type: String,
       required: true,
       minlength: 7,
