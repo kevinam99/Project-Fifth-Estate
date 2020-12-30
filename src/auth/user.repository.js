@@ -1,11 +1,11 @@
 const User = require('./user.entity')
-const mongo_users_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/Users?retryWrites=true&w=majority`
+const mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`
 const mongoose = require('mongoose')
 const logger = require('../logger/logger')
 
 const signUp = async (userCredentialsDto) => {
     try {
-        mongoose.connect(mongo_users_uri, {
+        mongoose.connect(mongo_uri, {
             useNewUrlParser: true,
             useCreateIndex: true,
             useUnifiedTopology: true,
