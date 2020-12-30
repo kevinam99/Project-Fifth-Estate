@@ -1,6 +1,6 @@
 const router = require('express').Router()
 
-const { extractPosts, getDbPosts } = require('./post.services')
+const { extractPosts, getDbPosts } = require('./posts.services')
 
 router.get('/group', async(req,res)=>{
     const response = await extractPosts(req.body.groupId)

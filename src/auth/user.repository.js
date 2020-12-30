@@ -7,6 +7,7 @@ const signUp = async (userCredentialsDto) => {
     user.username = username
     user.password = password
     //await user.save()     need to setup db for that
+    
 }
 
 module.exports = { signUp }
