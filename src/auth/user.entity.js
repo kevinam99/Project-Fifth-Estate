@@ -6,12 +6,12 @@ const UserEntity = new Schema([
     username: {
       type: String,
       required: true,
-      minlength: 7,
+      minlength: 2,
     },
     password: {
       type: String,
       required: true,
-      minlength: 8,
+      minlength: 2,
     },
 
     emailId: String,
