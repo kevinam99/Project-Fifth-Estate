@@ -23,3 +23,6 @@ const UserEntity = new Schema([
     },
   },
 ])
+
+const User = mongoose.model('User', UserEntity)
+module.exports = User;
