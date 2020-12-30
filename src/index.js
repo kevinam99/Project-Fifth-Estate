@@ -3,15 +3,7 @@ const FB = require("fb").default;
 const app = require("express")();
 const bodyParser = require("body-parser");
 const cors = require('cors')
-const router = require('express').Router()
 
-const getFeed = require("./services/getFeed");
-const {
-	filterGregPosts,
-	segregate,
-	createNewTag,
-} = require("./services/segregatePosts");
-const { storePosts, fetchPosts } = require("./services/dbConnect");
 const logger = require("./logger/logger");
 
 const PORT = process.env.PORT || 5000;
