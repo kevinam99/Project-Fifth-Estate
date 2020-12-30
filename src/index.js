@@ -46,7 +46,7 @@ app.patch("/hashtag", (req, res) => {
 	}
 });
 
-app.get("/dbposts", async(req, res) => {
+app.get("/api/dbposts", async(req, res) => {
 	console.log("Fetching Issues from DB")
 	try {
 		const issues = await fetchPosts("2020-10-18");
@@ -57,7 +57,7 @@ app.get("/dbposts", async(req, res) => {
 	}
 });
 
-app.get("/posts", async(req,res)=>{
+app.get("/api/posts", async(req,res)=>{
 	try {
 		const posts = await getFeed(req.body.groupId);
 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
