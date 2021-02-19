@@ -47,7 +47,7 @@ const getFeed = async () => {
 	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
 				if(res.error)
 				{
-					logger.error(`(getFeed.js)... ${re.error}`)
+					logger.error(`(getFeed.js)... ${JSON.stringify(res.error)}`)
 					reject(res.error)
 				}
 				else{
@@ -69,7 +69,6 @@ const getFeed = async () => {
 					}
 					else {
 						logger.info(`(getFeed.js)... No posts available at this time`)
-						reject(`No posts available at this time...(getFeed.js)`)
 						return;
 					}
 				}

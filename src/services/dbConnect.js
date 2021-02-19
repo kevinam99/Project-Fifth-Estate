@@ -19,7 +19,7 @@ const storePosts = async (segregatedPosts) => {
 			console.log("Complaints saved to db");
 		})
 		.catch((err) => {
-			logger.error(`(dbConnect.js)... ${err}`)
+			logger.error(`(dbConnect.js)... ${JSON.stringify(err)}`)
 			console.error(err);
 		});
 	// const connection = mongoose.connection;
