@@ -23,9 +23,9 @@ app.listen(PORT, () => {
 const main = async () => {
 	try {
 		const posts = await getFeed()
-		logger.info(`(index.js)...posts.length = ${posts.length}.`)
+		logger.info(`(index.js)...posts.length = ${JSON.stringify(posts.length)}.`)
 		console.log(
-			`posts.length (from index.js) = ${posts.length}.`
+			`posts.length (from index.js) = ${JSON.stringify(posts.length)}.`
 		)
 		if (posts.length > 0) {
 			// const filteredGregPosts = await filterGregPosts(posts)
@@ -42,7 +42,7 @@ const main = async () => {
 			console.log("storing segregated posts to db")
 			const saved = await storePosts(segregatedPosts) //the array of posts is stored to the db
 			logger.info(`(index.js)... Posts saved to DB`);
-			console.log(`${saved}...(index.js)`);
+			console.log(`${JSON.stringify(saved)}...(index.js)`);
 		} else {
 			logger.info(`(index.js)... No posts available at this time`)
 			console.log(`No posts available at this time...(index.js)`)

@@ -9,7 +9,7 @@ const filterGregPosts = (post) => {
 			return items.name.toLowerCase() == "#greg";
 		})
 	);
-	logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${gregPosts.length}`)
+	logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${JSON.stringify(gregPosts.length)}`)
 	return gregPosts;
 };
 
@@ -121,7 +121,7 @@ const segregate = async (gregPosts) => {
 				date: date,
 				time: time,
 			};
-			logger.info(`(segregatePosts.js)... Complaint details: ${obj}`)
+			logger.info(`(segregatePosts.js)... Complaint details: ${JSON.stringify(obj)}`)
 			console.log(obj);
 			segreatedPosts.push(obj);
 		}
