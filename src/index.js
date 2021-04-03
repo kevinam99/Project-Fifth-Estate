@@ -17,7 +17,6 @@ FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
 app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`)
-	console.log(`Listening on port ${PORT}`);
 });
 
 app.post('/', (req, res) => {
@@ -32,30 +31,24 @@ const main = async () => {
 		if (posts.length > 0) {
 			// const filteredGregPosts = await filterGregPosts(posts)
 			// logger.info(`(index.js)... greg posts = ${filteredGregPosts.length}`)
-			// console.log(
-			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
-			// )
 			// console.log(filteredGregPosts)
 			logger.info("(index.js)... Segregating Posts")
-			console.log("Segregating Posts");
 			const segregatedPosts = await segregate(posts); //segregates posts and returns an array of obj containing all the posts
 			
 			logger.info("(index.js)... Storing segregated posts to db")
-			console.log("storing segregated posts to db")
 			const saved = await storePosts(segregatedPosts) //the array of posts is stored to the db
-			logger.info(`(index.js)... Posts saved to DB`);
+			if(saved) logger.info(`(index.js)... Posts saved to DB`);
 			
 		} else {
 			logger.info(`(index.js)... No posts available at this time`)
 		}
 	} catch (err) {
 		logger.error(`(index.js)... Error: ${err}`)
-		console.error(err);
 	}
 };
 
 main();
-// posts.then(res => { console.log(`posts.length (from index.js) = ${res}`)})
+// posts.then(res => { logger.info(`posts.length (from index.js) = ${res}`)})
 // posts.catch(err => console.error(err))
 
 // const gregPosts = Controller.greg()
