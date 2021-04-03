@@ -5,22 +5,26 @@ const logger = require("../logger/logger");
 
 //db connection
 const storePosts = async (segregatedPosts) => {
-	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
+	const mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
 
 	mongoose.connect(mongo_uri, {
 		useNewUrlParser: true,
 		useCreateIndex: true,
 		useUnifiedTopology: true,
-	});
+	})
+	.then(() => {
+		logger.info("(dbConnect.js)... Mongo connected")
+	})
+	.catch(error => {
+		logger.error(`(dbConnect.js) line 19... ${error}`)
+	})
 
 	Complaint.insertMany(segregatedPosts)
 		.then(() => {
-			logger.info(`(dbConnect.js)... Complaints saved to DB.`)
-			console.log("Complaints saved to db");
+			logger.info(`(dbConnect.js) line 24... Complaints saved to DB.`)
 		})
 		.catch((err) => {
-			logger.error(`(dbConnect.js)... ${JSON.stringify(err)}`)
-			console.error(err);
+			logger.error(`(dbConnect.js) line 27... ${err}`)
 		});
 	// const connection = mongoose.connection;
 
