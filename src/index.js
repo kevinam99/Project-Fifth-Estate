@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config("./.env");
 const FB = require("fb").default;
 const app = require("express")();
 const bodyParser = require("body-parser");
@@ -20,13 +20,15 @@ app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
 });
 
+app.post('/', (req, res) => {
+	console.log(req.body)
+	res.sendStatus(200)
+})
+
 const main = async () => {
 	try {
 		const posts = await getFeed()
-		logger.info(`(index.js)...posts.length = ${JSON.stringify(posts.length)}.`)
-		console.log(
-			`posts.length (from index.js) = ${JSON.stringify(posts.length)}.`
-		)
+		logger.info(`(index.js)...posts.length = ${posts.length}.`)
 		if (posts.length > 0) {
 			// const filteredGregPosts = await filterGregPosts(posts)
 			// logger.info(`(index.js)... greg posts = ${filteredGregPosts.length}`)
@@ -42,13 +44,12 @@ const main = async () => {
 			console.log("storing segregated posts to db")
 			const saved = await storePosts(segregatedPosts) //the array of posts is stored to the db
 			logger.info(`(index.js)... Posts saved to DB`);
-			console.log(`${JSON.stringify(saved)}...(index.js)`);
+			
 		} else {
 			logger.info(`(index.js)... No posts available at this time`)
-			console.log(`No posts available at this time...(index.js)`)
 		}
 	} catch (err) {
-		logger.error(`(index.js)... Error: ${JSON.stringify(err)}`)
+		logger.error(`(index.js)... Error: ${err}`)
 		console.error(err);
 	}
 };
