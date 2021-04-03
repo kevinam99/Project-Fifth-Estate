@@ -5,8 +5,8 @@ const FB = require('fb').default;
 // const secrets = require('../testing-stuff/secrets.json')
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
 FB.options({version: process.env.API_VERSION});
-let page_access_token = process.env.PAGE_ACCESS_TOKEN
-let groupId = "210553450180199"
+const page_access_token = process.env.PAGE_ACCESS_TOKEN
+const groupId = "210553450180199"
 
 FB.setAccessToken(page_access_token)
 
@@ -47,13 +47,13 @@ const getFeed = async () => {
 	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
 				if(res.error)
 				{
-					logger.error(`(getFeed.js)... ${JSON.stringify(res.error)}`)
+					logger.error(`(getFeed.js)... ${res.error}`)
 					reject(res.error)
 				}
 				else{
 					console.log(res.data)
 					if(res.data.length > 0) {
-						logger.info(`(getFeed.js)... Received ${JSON.stringify(res.data.length)} posts at this time.`)
+						logger.info(`(getFeed.js)... Received ${res.data.length} posts at this time.`)
 						console.log(`res.data[0] (from getFeed.js) = ${res.data[0]} \n`)
 						if(lastPostId == undefined) { // running the whole program for the first time
 							lastPostId = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed
