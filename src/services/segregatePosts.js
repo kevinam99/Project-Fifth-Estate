@@ -2,15 +2,18 @@ const Complaint = require("../models/complaint.model");
 const logger = require("../logger/logger");
 const analyseSentiment = require('Sentimental').analyze;
 const filterGregPosts = (post) => {
+
+	//ignore greg filter
+
 	// segregating based on #greg
-	const hastagPosts = post.filter((e) => "message_tags" in e);
-	const gregPosts = hastagPosts.filter((e) =>
-		e.message_tags.find((items) => {
-			return items.name.toLowerCase() == "#greg";
-		})
-	);
-	logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${gregPosts.length}`)
-	return gregPosts;
+	// const hastagPosts = post.filter((e) => "message_tags" in e);
+	// const gregPosts = hastagPosts.filter((e) =>
+	// 	e.message_tags.find((items) => {
+	// 		return items.name.toLowerCase() == "#greg";
+	// 	})
+	// );
+	// logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${gregPosts.length}`)
+	return post;
 };
 
 const departments = {
