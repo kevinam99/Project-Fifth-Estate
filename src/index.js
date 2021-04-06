@@ -26,6 +26,11 @@ app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}`);
 });
 
+app.post('/', (req, res) => {
+	console.log(req.body)
+	res.sendStatus(200)
+})
+
 
 app.post("/complaint", (req, res) => {
 	res.sendStatus(200);
