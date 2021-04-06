@@ -69,18 +69,12 @@ app.get("/api/posts", async(req,res)=>{
 			logger.info(
 				`(index.js)... greg posts = ${filteredGregPosts.length}`
 			);
-			// console.log(
-			// 	`greg posts (from index.js) = ${filteredGregPosts.length}`
-			// );
-			// console.log(filteredGregPosts)
 			logger.info("(index.js)... Segregating Posts");
-			// console.log("Segregating Posts");
-
+			
 			const segregatedPosts = await segregate(filteredGregPosts); 
-			//const segregatedPosts = await segregate(posts); //segregates posts and returns an array of obj containing all the posts
 			
 			logger.info("(index.js)... Storing segregated posts to db");
-			//console.log("storing segregated posts to db");
+	
 			
 			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
 			logger.info(`(index.js)... Posts saved to DB`);
