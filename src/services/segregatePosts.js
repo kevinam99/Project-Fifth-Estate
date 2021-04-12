@@ -1,6 +1,6 @@
 const Complaint = require("../models/complaint.model");
 const logger = require("../logger/logger");
-const negativity = require('Sentimental').negativity;
+const negativity = require('Sentimental').analyse;
 const filterGregPosts = (post) => {
 	// segregating based on #greg
 	const hastagPosts = post.filter((e) => "message_tags" in e);
@@ -60,7 +60,7 @@ const segregate = async (gregPosts) => {
 		dept = [`unknown`];
 		complaint = `unknown`;
 		time = `unknown`;
-		link = `www.facebook.com/${post.id}`;
+		link = `https://www.facebook.com/${post.id}`;
 		sentiment = 0;
 		complaint = post.message;
 
@@ -78,17 +78,17 @@ const segregate = async (gregPosts) => {
 			});
 		} catch (TypeError) {
 			// TypeError: Cannot read property 'location' of undefined. This error might occur for place in case the user doesn't tag a place in the post
-			post.message_tags.find((items) => {
-				const dept_place = items.name.toLowerCase().split("#")[1];
-				if (places[dept_place]) {
-					// if place exists
-					place = dept_place;
-				}
-				if (departments[dept_place] && dept_place != 'greg') {
-					// if dept exists
-					dept.push(dept_place);
-				}
-			});
+			// post.message_tags.find((items) => {
+			// 	const dept_place = items.name.toLowerCase().split("#")[1];
+			// 	if (places[dept_place]) {
+			// 		// if place exists
+			// 		place = dept_place;
+			// 	}
+			// 	if (departments[dept_place] && dept_place != 'greg') {
+			// 		// if dept exists
+			// 		dept.push(dept_place);
+			// 	}
+			// });
 		} finally {
 			place = place.split(" ")[0].toLowerCase();
 			if (dept != `unknown` && place != `unknown`) {

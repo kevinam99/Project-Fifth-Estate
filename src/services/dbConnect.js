@@ -5,23 +5,22 @@ const logger = require("../logger/logger");
 
 //db connection
 const storePosts = async (segregatedPosts) => {
-	let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
-
-	mongoose.connect(mongo_uri, {
-		useNewUrlParser: true,
-		useCreateIndex: true,
-		useUnifiedTopology: true,
-	});
-
-	Complaint.insertMany(segregatedPosts)
-		.then(() => {
-			logger.info(`(dbConnect.js)... Complaints saved to DB.`)
-			console.log("Complaints saved to db");
+	const mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo?retryWrites=true&w=majority`;
+	try {
+		await mongoose.connect(mongo_uri, {
+			useNewUrlParser: true,
+			useCreateIndex: true,
+			useUnifiedTopology: true,
 		})
-		.catch((err) => {
-			logger.error(`(dbConnect.js)... ${err}`)
-			console.error(err);
-		});
+		logger.info("(dbConnect.js)... Mongo connected")
+
+		await Complaint.insertMany(segregatedPosts)
+		logger.info(`(dbConnect.js) line 24... Complaints saved to DB.`)
+	}
+	
+	catch(error) {
+		logger.error(`(dbConnect.js) line 19... ${error}`)
+	}
 	// const connection = mongoose.connection;
 
 	// connection
@@ -42,7 +41,6 @@ const storePosts = async (segregatedPosts) => {
 	// 		console.error(error);
 	// 	});
 
-	return 1;
 };
 
 module.exports = storePosts;

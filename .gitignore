@@ -8,7 +8,7 @@ lerna-debug.log*
 src/package-lock.json
 src/file.json
 src/file2.json
-src/longLived*.json
+longLived*.json
 .env
 file.json
 test.json

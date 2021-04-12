@@ -5,8 +5,8 @@ const FB = require('fb').default;
 // const secrets = require('../testing-stuff/secrets.json')
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
 FB.options({version: process.env.API_VERSION});
-let page_access_token = process.env.PAGE_ACCESS_TOKEN
-let groupId = 210553450180199
+const page_access_token = process.env.PAGE_ACCESS_TOKEN
+const groupId = "210553450180199"
 
 FB.setAccessToken(page_access_token)
 
@@ -69,7 +69,6 @@ const getFeed = async () => {
 					}
 					else {
 						logger.info(`(getFeed.js)... No posts available at this time`)
-						reject(`No posts available at this time...(getFeed.js)`)
 						return;
 					}
 				}
