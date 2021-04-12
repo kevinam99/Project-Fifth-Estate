@@ -21,6 +21,59 @@ app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`)
 });
 
+
+//{
+// 	try {
+// 		const posts = await getFeed();
+// 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
+
+// 		if (posts.length > 0) {
+// 			const filteredGregPosts = await filterGregPosts(posts);
+// 			logger.info(
+// 				`(index.js)... greg posts = ${filteredGregPosts.length}`
+// 			);
+// 			logger.info("(index.js)... Segregating Posts");
+// 			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
+
+// 			logger.info("(index.js)... Storing segregated posts to db");
+			
+// 			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
+// 			logger.info(`(index.js)... Posts saved to DB`);
+// 			res.send(`Saved ${saved}...(index.js)`+ `\r\n${JSON.stringify(segregatedPosts,null,4)}`);
+// 		} else {
+// 			logger.info(`(index.js)... No posts available at this time`);
+// 			res.send(`No posts available at this time...(index.js)`);
+// 		}
+// 	} 
+// 	catch (err) {
+// 		logger.error(`(index.js)... Error: ${err}`);
+// 		res.send(err);
+// 	}
+//}
+const groupId = "210553450180199"
+const main = async (groupId) => {
+	try {
+		const posts = await getFeed(groupId)
+		logger.info(`(index.js)...posts.length = ${posts.length}.`)
+		if (posts.length > 0) {
+			// const filteredGregPosts = await filterGregPosts(posts)
+			// logger.info(`(index.js)... greg posts = ${filteredGregPosts.length}`)
+			// console.log(filteredGregPosts)
+			logger.info("(index.js)... Segregating Posts")
+			const segregatedPosts = await segregate(posts); //segregates posts and returns an array of obj containing all the posts
+			
+			logger.info("(index.js)... Storing segregated posts to db")
+			const saved = await storePosts(segregatedPosts) //the array of posts is stored to the db
+			if(saved) logger.info(`(index.js)... Posts saved to DB`);
+			
+		} else {
+			logger.info(`(index.js)... No posts available at this time`)
+		}
+	} catch (err) {
+		logger.error(`(index.js)... Error: ${err}`)
+	}
+};
+
 app.post('/', (req, res) => {
 	console.log(req.body)
 	res.sendStatus(200)
@@ -60,29 +113,6 @@ app.get("/dbposts", async(req, res) => {
 });
 
 app.get("/posts", async(req,res)=>{
-	try {
-		const posts = await getFeed();
-		logger.info(`(index.js)...posts.length = ${posts.length}.`);
-
-		if (posts.length > 0) {
-			const filteredGregPosts = await filterGregPosts(posts);
-			logger.info(
-				`(index.js)... greg posts = ${filteredGregPosts.length}`
-			);
-			logger.info("(index.js)... Segregating Posts");
-			const segregatedPosts = await segregate(filteredGregPosts); //segregates posts and returns an array of obj containing all the posts
-
-			logger.info("(index.js)... Storing segregated posts to db");
-			
-			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
-			logger.info(`(index.js)... Posts saved to DB`);
-			res.send(`Saved ${saved}...(index.js)`+ `\r\n${JSON.stringify(segregatedPosts,null,4)}`);
-		} else {
-			logger.info(`(index.js)... No posts available at this time`);
-			res.send(`No posts available at this time...(index.js)`);
-		}
-	} catch (err) {
-		logger.error(`(index.js)... Error: ${err}`);
-		res.send(err);
-	}
+	main()
+	res.sendStatus(200);
 })
