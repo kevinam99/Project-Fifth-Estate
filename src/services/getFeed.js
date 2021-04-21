@@ -1,6 +1,7 @@
+require('dotenv').config()
+
 const logger = require('../logger/logger');
 
-require('dotenv').config()
 const FB = require('fb').default;
 // const secrets = require('../testing-stuff/secrets.json')
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
