@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config("./.env");
 const FB = require("fb").default;
 const app = require("express")();
 const bodyParser = require("body-parser");
