@@ -64,7 +64,7 @@ app.get("/api/dbposts", async(req, res) => {
 app.get("/api/posts", async(req,res)=>{
 	try {
 		main()
-		res.send(200)
+		res.sendStatus(200)
 	}
 	catch(error) {
 		res.send(error)

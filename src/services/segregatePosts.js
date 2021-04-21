@@ -124,6 +124,7 @@ const segregate = async (gregPosts) => {
 				time: time,
 			};
 			logger.info(`(segregatePosts.js)... Complaint details: ${JSON.stringify(obj)}`)
+			console.log(obj)
 			segreatedPosts.push(obj);
 		}
 	});
