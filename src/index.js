@@ -1,4 +1,4 @@
-require("dotenv").config("./.env");
+require("dotenv").config();
 const FB = require("fb").default;
 const app = require("express")();
 const bodyParser = require("body-parser");
@@ -23,7 +23,6 @@ FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
 app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`);
-	console.log(`Listening on port ${PORT}`);
 });
 
 app.post('/', (req, res) => {
@@ -52,10 +51,10 @@ app.patch("/hashtag", (req, res) => {
 });
 
 app.get("/api/dbposts", async(req, res) => {
-	console.log("Fetching Issues from DB")
+	logger.info("(index.js)... Fetching Issues from DB")
 	try {
 		const issues = await fetchPosts("2020-10-18");
-		console.log(issues);
+		logger.info(issues);
 		res.send(issues);
 	} catch (error) {
 		console.error(error);
@@ -64,12 +63,22 @@ app.get("/api/dbposts", async(req, res) => {
 
 app.get("/api/posts", async(req,res)=>{
 	try {
-		const posts = await getFeed(req.body.groupId);
+		main()
+		res.send(200)
+	}
+	catch(error) {
+		res.send(error)
+		logger.error(`(index.js, line 68)... ${error}`)
+	}
+})
+
+const main = async() => {
+	try {
+		const posts = await getFeed(210553450180199);
 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
 
 		if (posts.length > 0) {
 			
-			//ignore #greg
 			const filteredGregPosts = await filterGregPosts(posts);
 			logger.info(
 				`(index.js)... greg posts = ${filteredGregPosts.length}`
@@ -83,13 +92,14 @@ app.get("/api/posts", async(req,res)=>{
 			
 			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
 			logger.info(`(index.js)... Posts saved to DB`);
-			res.send(`Saved ${saved}...(index.js)`+ `\r\n${JSON.stringify(segregatedPosts,null,4)}`);
+			
 		} else {
 			logger.info(`(index.js)... No posts available at this time`);
-			res.send(`No posts available at this time...(index.js)`);
+			
 		}
 	} catch (err) {
 		logger.error(`(index.js)... Error: ${err}`);
-		res.send(err);
 	}
-})
+}
+
+main()
