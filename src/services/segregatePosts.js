@@ -1,23 +1,16 @@
-const Complaint = require("../models/complaint.model");
 const logger = require("../logger/logger");
-<<<<<<< HEAD
 const analyseSentiment = require('Sentimental').analyze;
-=======
-const negativity = require('Sentimental').analyse;
->>>>>>> ignoreGregFilter
 const filterGregPosts = (post) => {
 
-	//ignore greg filter
-
 	// segregating based on #greg
-	// const hastagPosts = post.filter((e) => "message_tags" in e);
-	// const gregPosts = hastagPosts.filter((e) =>
-	// 	e.message_tags.find((items) => {
-	// 		return items.name.toLowerCase() == "#greg";
-	// 	})
-	// );
-	// logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${gregPosts.length}`)
-	return post;
+	const hastagPosts = post.filter((e) => "message_tags" in e); // get posts containing hasthags
+	const gregPosts = hastagPosts.filter((e) =>
+		e.message_tags.find((items) => {
+			return items.name.toLowerCase() == "#greg";
+		})
+	);
+	logger.info(`(segregatePosts.js)... Filtered Greg posts. Total: ${gregPosts.length}`)
+	return gregPosts;
 };
 
 const departments = {
@@ -78,6 +71,7 @@ const segregate = async (gregPosts) => {
 			place = post.place.location.city;
 			post.message_tags.find((items) => {
 				const dept_place = items.name.toLowerCase().split("#")[1];
+				console.log(`dept_pace = ${dept_place}\n`)
 				if (departments[dept_place] && dept_place != 'greg') {
 					// if dept exists
 					dept.push(dept_place);
@@ -85,37 +79,38 @@ const segregate = async (gregPosts) => {
 			});
 		} catch (TypeError) {
 			// TypeError: Cannot read property 'location' of undefined. This error might occur for place in case the user doesn't tag a place in the post
-			// post.message_tags.find((items) => {
-			// 	const dept_place = items.name.toLowerCase().split("#")[1];
-			// 	if (places[dept_place]) {
-			// 		// if place exists
-			// 		place = dept_place;
-			// 	}
-			// 	if (departments[dept_place] && dept_place != 'greg') {
-			// 		// if dept exists
-			// 		dept.push(dept_place);
-			// 	}
-			// });
+			post.message_tags.find((items) => {
+				const dept_place = items.name.toLowerCase().split("#")[1];
+				if (places[dept_place]) {
+					// if place exists
+					place = dept_place;
+				}
+				if (departments[dept_place] && dept_place != 'greg') {
+					// if dept exists
+					dept.push(dept_place);
+				}
+			});
 		} finally {
 			place = place.split(" ")[0].toLowerCase();
 			if (dept != `unknown` && place != `unknown`) {
-				console.log(
+				logger.info(
 					`Complaint => [ ${complaint} ] \ndepartment => ${dept} \nplace => ${place}\n`
 				);
 			} else {
-				console.log(`Complaint: [ ${complaint} ]`);
+				logger.info(`Complaint: [ ${JSON.stringify(complaint)} ]`);
 				if (dept == `unknown`) {
-					console.log(`dept unknown`);
+					logger.info(`dept unknown`);
 				}
 
 				if (place == `unknown`) {
-					console.log(`Place unknown`);
+					logger.info(`Place unknown`);
 				}
 			}
 
+
 			if(dept.length > 1) { // excluding the preinitialise ['unknown']
 				dept = dept.filter(element => { // removing `unknown` from dept list
-					return element != 'unknown' 
+					return element !== `unknown`
 				})
 			}
 			 
@@ -128,7 +123,7 @@ const segregate = async (gregPosts) => {
 				date: date,
 				time: time,
 			};
-			logger.info(`(segregatePosts.js)... Complaint details: ${obj}`)
+			logger.info(`(segregatePosts.js)... Complaint details: ${JSON.stringify(obj)}`)
 			segreatedPosts.push(obj);
 		}
 	});
