@@ -21,12 +21,19 @@ const storePosts = async (segregatedPosts) => {
   return 1
 }
 const fetchPosts = async (date) => {
-  mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-  })
+  try {
+    mongoose.connect(MONGODB_URI, {
+      useNewUrlParser: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true,
+    })
+    
+    return Complaint.find({})
+    
+  } catch (error) {
+    logger.error(`(dbConnect.js) line 31... ${error}`)
+  }
 
-  return Complaint.find({})
+  
 }
 module.exports = { storePosts, fetchPosts }
