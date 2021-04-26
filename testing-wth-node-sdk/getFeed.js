@@ -1,46 +1,80 @@
+const logger = require('../logger/logger');
+
 require('dotenv').config()
 const FB = require('fb').default;
 // const secrets = require('../testing-stuff/secrets.json')
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
-let page_access_token = process.env.PAGE_ACCESS_TOKEN
-let groupId = 210553450180199
+FB.options({version: process.env.API_VERSION});
+const page_access_token = process.env.PAGE_ACCESS_TOKEN
+//const groupId = "210553450180199"
 
 FB.setAccessToken(page_access_token)
 
-const options = {
-					"fields":`description,
-							  full_picture,
-							  message,
-							  message_tags,
-							  story_tags,
-							  created_time,
-							  coordinates,
-							  name,
-							  link,
-							  place,
-							  picture,
-							  status_type,
-							  type,
-							  attachments{media},
-							  comments{message_tags}`
-				}
+const getTime = () => {
+	let date = new Date().toUTCString()
+	let now = Math.floor(new Date(date).getTime() / 1000)
 
-FB.api(`/${groupId}/feed`, 'GET', options, res => {
-      if(res.error)
-      {
-        console.error(res.error)
-      }
-      else{
-        console.log(res.data.length)
-        try {
-          // writing feed to file
-            const fs = require('fs')
-            let path = "./file.json"
-            fs.writeFileSync(path, JSON.stringify(res, null, 4))
-          } 
-        catch (err){
-          console.error(err)
-        }
-      }
-    }
-  )
+	let since = new Date(date).setHours(new Date(date).getHours() - 1)
+	since = Math.floor(new Date(since).getTime() / 1000)
+
+	return {since, now}
+}
+
+const getFeed = async (groupId) => {
+	return new Promise((resolve, reject) => {
+	const {since, now} = getTime()
+	let lastPostId
+	const apiParams = {
+							fields: `description,
+									full_picture,
+									message,
+									message_tags,
+									story_tags,
+									created_time,
+									coordinates,
+									name,
+									link,
+									place,
+									picture,
+									status_type,
+									type,
+									attachments{media},
+									comments{message_tags}`,
+							since: since,
+							until: now
+					}
+
+	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
+				if(res.error)
+				{
+					logger.error(`(getFeed.js)... ${res.error}`)
+					reject(res.error)
+				}
+				else{
+					console.log(res.data)
+					if(res.data.length > 0) {
+						logger.info(`(getFeed.js)... Received ${res.data.length} posts at this time.`)
+						console.log(`res.data[0] (from getFeed.js) = ${res.data[0]} \n`)
+						if(lastPostId == undefined) { // running the whole program for the first time
+							lastPostId = res.data[0].id // keeping knowledge of last post accessed so that the same post isn't accessed
+							resolve(res.data)
+						}
+						else if(lastPostId) { // if we know what the last post has been accessed when the program was run the previous time
+							res.data = res.data.filter(posts => {
+								return posts.id != lastPostId
+							})
+							resolve(res.data)
+						}
+						
+					}
+					else {
+						logger.info(`(getFeed.js)... No posts available at this time`)
+						return;
+					}
+				}
+			}
+		)
+	})
+}
+
+module.exports = getFeed

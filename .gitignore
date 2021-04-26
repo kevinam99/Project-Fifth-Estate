@@ -5,18 +5,20 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-testing-stuff/test.js
-testing-stuff/secrets.json
-testing-stuff/seccc.js
-testing-stuff/package-lock.json
-testing-wth-node-sdk/package-lock.json
-testing-wth-node-sdk/file.json
-testing-wth-node-sdk/file2.json
-testing-wth-node-sdk/longLived*.json
+src/package-lock.json
+src/file.json
+src/file2.json
+longLived*.json
 .env
-src/
 file.json
 test.json
+testing-stuff
+src/publishPost.js
+src/reauthenticateToken.js
+src/uploadPic.js
+src/services/webhook.js
+src/controller.js
+src/test.js
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
