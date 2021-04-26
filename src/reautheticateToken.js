@@ -1,3 +1,4 @@
+// just run this program to get the relevant tokens.
 const FB = require('fb').default;
 const secrets = require('../secrets.json');
 
