@@ -22,7 +22,7 @@ const storePosts = async (segregatedPosts) => {
 }
 const fetchPosts = async (date) => {
   try {
-    mongoose.connect(MONGODB_URI, {
+    await mongoose.connect(MONGODB_URI, {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
