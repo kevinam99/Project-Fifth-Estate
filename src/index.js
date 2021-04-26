@@ -57,7 +57,7 @@ app.get("/api/dbposts", async(req, res) => {
 		logger.info(issues);
 		res.send(issues);
 	} catch (error) {
-		console.error(error);
+		logger.error(error);
 	}
 });
 
