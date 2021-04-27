@@ -55,7 +55,7 @@ app.get("/api/dbposts", async(req, res) => {
 	try {
 		const issues = await fetchPosts("2020-10-18");
 		logger.info(issues);
-		res.send(issues);
+		res.status(200).send(issues);
 	} catch (error) {
 		logger.error(`(index.js, line 60)... ${error}`);
 	}
@@ -67,7 +67,7 @@ app.get("/api/posts", async(req,res)=>{
 		res.sendStatus(200)
 	}
 	catch(error) {
-		res.send(error)
+		res.status(500).send(error)
 		logger.error(`(index.js, line 68)... ${error}`)
 	}
 })
