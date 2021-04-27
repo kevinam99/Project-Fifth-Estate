@@ -1,9 +1,8 @@
 const logger = require("../logger/logger");
-const analyseSentiment = require('Sentimental').analyze;
+const negativity = require('Sentimental').negativity;
 const filterGregPosts = (post) => {
-
 	// segregating based on #greg
-	const hastagPosts = post.filter((e) => "message_tags" in e); // get posts containing hasthags
+	const hastagPosts = post.filter((e) => "message_tags" in e);
 	const gregPosts = hastagPosts.filter((e) =>
 		e.message_tags.find((items) => {
 			return items.name.toLowerCase() == "#greg";
@@ -60,7 +59,7 @@ const segregate = async (gregPosts) => {
 		dept = [`unknown`];
 		complaint = `unknown`;
 		time = `unknown`;
-		link = `https://www.facebook.com/${post.id}`;
+		link = `www.facebook.com/${post.id}`;
 		sentiment = 0;
 		complaint = post.message;
 
@@ -71,7 +70,6 @@ const segregate = async (gregPosts) => {
 			place = post.place.location.city;
 			post.message_tags.find((items) => {
 				const dept_place = items.name.toLowerCase().split("#")[1];
-				console.log(`dept_pace = ${dept_place}\n`)
 				if (departments[dept_place] && dept_place != 'greg') {
 					// if dept exists
 					dept.push(dept_place);
@@ -93,24 +91,23 @@ const segregate = async (gregPosts) => {
 		} finally {
 			place = place.split(" ")[0].toLowerCase();
 			if (dept != `unknown` && place != `unknown`) {
-				logger.info(
+				console.log(
 					`Complaint => [ ${complaint} ] \ndepartment => ${dept} \nplace => ${place}\n`
 				);
 			} else {
-				logger.info(`Complaint: [ ${JSON.stringify(complaint)} ]`);
+				console.log(`Complaint: [ ${complaint} ]`);
 				if (dept == `unknown`) {
-					logger.info(`dept unknown`);
+					console.log(`dept unknown`);
 				}
 
 				if (place == `unknown`) {
-					logger.info(`Place unknown`);
+					console.log(`Place unknown`);
 				}
 			}
 
-
 			if(dept.length > 1) { // excluding the preinitialise ['unknown']
 				dept = dept.filter(element => { // removing `unknown` from dept list
-					return element !== `unknown`
+					return element != 'unknown' 
 				})
 			}
 			 
@@ -119,11 +116,12 @@ const segregate = async (gregPosts) => {
 				postLink: link,
 				dept: dept,
 				place: place,
-				sentiment: analyseSentiment(complaint).score,
+				sentiment: negativity(complaint).score,
 				date: date,
 				time: time,
 			};
-			logger.info(`(segregatePosts.js)... Complaint details: ${JSON.stringify(obj)}`)
+			logger.info(`(segregatePosts.js)... Complaint details: ${obj}`)
+			console.log(obj);
 			segreatedPosts.push(obj);
 		}
 	});

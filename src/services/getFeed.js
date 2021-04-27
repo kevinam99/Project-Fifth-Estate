@@ -1,13 +1,11 @@
 require('dotenv').config()
-
 const logger = require('../logger/logger');
-
 const FB = require('fb').default;
 // const secrets = require('../testing-stuff/secrets.json')
 FB.extend({appId: process.env.APP_ID, appSecret: process.env.APP_SECRET})
 FB.options({version: process.env.API_VERSION});
 const page_access_token = process.env.PAGE_ACCESS_TOKEN
-//const groupId = "210553450180199"
+const groupId = "210553450180199"
 
 FB.setAccessToken(page_access_token)
 
@@ -21,7 +19,7 @@ const getTime = () => {
 	return {since, now}
 }
 
-const getFeed = async (groupId) => {
+const getFeed = async () => {
 	return new Promise((resolve, reject) => {
 	const {since, now} = getTime()
 	let lastPostId
