@@ -63,7 +63,7 @@ app.get("/api/dbposts", async(req, res) => {
 
 app.get("/api/posts", async(req,res)=>{
 	try {
-		main()
+		main(req.body.groupId)
 		res.sendStatus(200)
 	}
 	catch(error) {
@@ -72,9 +72,9 @@ app.get("/api/posts", async(req,res)=>{
 	}
 })
 
-const main = async() => {
+const main = async(groupId = 210553450180199) => {
 	try {
-		const posts = await getFeed(210553450180199);
+		const posts = await getFeed(groupId);
 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
 
 		if (posts.length > 0) {
