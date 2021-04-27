@@ -12,7 +12,7 @@ const connectDB = async(MONGODB_URI) => {
       useCreateIndex: true,
       useUnifiedTopology: true,
     })
-    logger.info("Connected to Mongo Atlas")
+    logger.info("Connected to Mongo Atlas!")
   }
   catch(error) {
     logger.error(`Error while connecting to Mongo Atlas: ${error}`)
@@ -21,26 +21,28 @@ const connectDB = async(MONGODB_URI) => {
 //db connection
 const storePosts = async (segregatedPosts) => {
     try{
+      await connectDB(MONGODB_URI)
       await Complaint.insertMany(segregatedPosts)
       logger.info(`(dbConnect.js)... Complaints saved to DB.`)
     
   } catch (error) {
-    logger.error(`(dbConnect.js) line 27... ${error}`)
+    logger.error(`(dbConnect.js)... ${error}`)
     return error
   }
   return 1
 }
 const fetchPosts = async (date) => {
   try {
+    await connectDB(MONGODB_URI)
     return Complaint.find({})
     
   } catch (error) {
-    logger.error(`(dbConnect.js) line 37... ${error}`)
+    logger.error(`(dbConnect.js)... ${error}`)
     return error
   }
 
   
 }
 
-connectDB(MONGODB_URI)
+
 module.exports = { storePosts, fetchPosts }
