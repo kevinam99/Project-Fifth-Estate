@@ -10,7 +10,7 @@ const {
 	segregate,
 	createNewTag,
 } = require("./services/segregatePosts");
-// const { storePosts, fetchPosts } = require("./services/dbConnect");
+const { storePosts, fetchPosts } = require("./services/dbConnect");
 const logger = require("./logger/logger");
 
 const PORT = process.env.PORT || 5000;
