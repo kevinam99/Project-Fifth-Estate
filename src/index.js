@@ -10,7 +10,7 @@ const {
 	segregate,
 	createNewTag,
 } = require("./services/segregatePosts");
-const { storePosts, fetchPosts } = require("./services/dbConnect");
+// const { storePosts, fetchPosts } = require("./services/dbConnect");
 const logger = require("./logger/logger");
 
 const PORT = process.env.PORT || 5000;
@@ -80,18 +80,20 @@ const main = async() => {
 		if (posts.length > 0) {
 			
 			const filteredGregPosts = await filterGregPosts(posts);
-			logger.info(
-				`(index.js)... greg posts = ${filteredGregPosts.length}`
-			);
-			logger.info("(index.js)... Segregating Posts");
-			
-			const segregatedPosts = await segregate(filteredGregPosts); 
-			
-			logger.info("(index.js)... Storing segregated posts to db");
-	
-			
-			const saved = await storePosts(segregatedPosts); //the array of posts is stored to the db
-			logger.info(`(index.js)... Posts saved to DB`);
+			logger.info(`(index.js)... greg posts = ${filteredGregPosts.length}`);
+			if(filteredGregPosts.length > 0) {
+				logger.info("(index.js)... Segregating Posts");
+				
+				const segregatedPosts = await segregate(filteredGregPosts); 
+				
+				logger.info("(index.js)... Storing segregated posts to db");
+		
+				await storePosts(segregatedPosts); //the array of posts is stored to the db
+				logger.info(`(index.js)... Posts saved to DB`);
+			}
+			else if(filteredGregPosts.length == 0) {
+				logger.info("No Greg posts available")
+			}
 			
 		} else {
 			logger.info(`(index.js)... No posts available at this time`);
