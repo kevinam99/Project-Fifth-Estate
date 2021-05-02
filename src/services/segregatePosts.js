@@ -1,9 +1,21 @@
+/** @module segregate */
 const logger = require("../logger/logger");
+/**
+ * Sentiment analysing module. This method identifies the positivity score
+ * of the recieved post text.
+ */
 const analyseSentiment = require('Sentimental').analyze;
+
+/**
+ * 
+ * This function analyses the given posts and only keeps the posts that have #greg in the body.
+ * 
+ * @param {Object} post - The complete post information from Graph API's response.
+ * @returns {Object} gregPosts - The posts that have #greg in the body.
+ */
 const filterGregPosts = (post) => {
 
-	// segregating based on #greg
-	const hastagPosts = post.filter((e) => "message_tags" in e); // get posts containing hasthags
+	const hastagPosts = post.filter((e) => "message_tags" in e); // get posts containing hashtags
 	const gregPosts = hastagPosts.filter((e) =>
 		e.message_tags.find((items) => {
 			return items.name.toLowerCase() == "#greg";
@@ -13,6 +25,9 @@ const filterGregPosts = (post) => {
 	return gregPosts;
 };
 
+/**
+ * This object contains the record of the relevant departments.
+ */
 const departments = {
 	goapwd: true,
 	goaelectricity: true,
@@ -21,6 +36,12 @@ const departments = {
 	goaeducation: true,
 };
 
+/** 
+ * This function adds new departments as and when there's a requirement
+ * 
+ * @param {String} receivedTag - The new tag, i.e, the department name
+ * @returns {Object} departments - The updated list of all departments.
+ */
 const createNewTag = (receivedTag) => {
 	console.log(receivedTag)
 	if (!departments[`${receivedTag}`]) {
@@ -32,6 +53,15 @@ const createNewTag = (receivedTag) => {
 	}
 };
 
+/**
+ * 
+ * This function segregates wach post by further identifying the relevant department (from the hashtags), 
+ * the geotagged location and the positivity score of the post text (sentiment). The technique used is
+ * lexicon based sentiment analysis.
+ * 
+ * @param {Object} gregPosts - The posts identified by #greg
+ * @returns {Object} segregatedPosts - The posts broken down to dept, place, complaint, date, time and post link.
+  */
 const segregate = async (gregPosts) => {
 	// segregating based on departments
 	logger.info(`(segregatePosts.js)... Segregation begins`)
@@ -51,7 +81,10 @@ const segregate = async (gregPosts) => {
 
 	let segreatedPosts = []; //array of posts
 
-	gregPosts.forEach( post => {
+	/**
+	 * Iterating through each post with #greg
+	 */
+	gregPosts.forEach(post => {
 
 		// reinitialise values for next post
 
@@ -115,7 +148,7 @@ const segregate = async (gregPosts) => {
 			}
 			 
 
-			var obj = {
+			const obj = {
 				postLink: link,
 				dept: dept,
 				place: place,
@@ -131,6 +164,7 @@ const segregate = async (gregPosts) => {
 	
 	return segreatedPosts;
 };
+
 
 module.exports = {
 	filterGregPosts,

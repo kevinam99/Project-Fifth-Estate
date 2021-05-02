@@ -1,3 +1,4 @@
+/** @module index */
 require("dotenv").config();
 const FB = require("fb").default;
 const app = require("express")();
@@ -25,12 +26,22 @@ app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`);
 });
 
+/**
+ * @event POST /
+ * 
+ */
 app.post('/', (req, res) => {
 	console.log(req.body)
 	res.sendStatus(200)
 })
 
-
+/**
+ * @event POST /complaint
+ * This is the webhook endpoint that receives new posts as and when they
+ * are published. 
+ * 
+ * @returns {Integer} Response Code
+ */
 app.post("/complaint", (req, res) => {
 	res.sendStatus(200);
 	console.log(`Field => ${req.body.entry[0].changes[0].field}`);
@@ -39,7 +50,12 @@ app.post("/complaint", (req, res) => {
 	console.log(`Date: ${date} \nTime: ${time}`);
 });
 
-//for adding new departments
+/**
+ * @event PATCH /hashtag
+ * 
+ * This endpoint is used for adding new departments
+ * @returns {Integer} Response Code
+ */
 app.patch("/hashtag", (req, res) => {
 	const dept = createNewTag(req.body.tagName);
 	console.log(dept);
@@ -50,6 +66,13 @@ app.patch("/hashtag", (req, res) => {
 	}
 });
 
+/**
+ * @event GET /api/dbposts
+ * 
+ * This endpoint is used for adding new departments. Used for testing locally.
+ * 
+ * @returns {object} posts - Posts saved in the DB
+ */
 app.get("/api/dbposts", async(req, res) => {
 	logger.info("(index.js)... Fetching Issues from DB")
 	try {
@@ -61,6 +84,13 @@ app.get("/api/dbposts", async(req, res) => {
 	}
 });
 
+/**
+ * @event GET /api/posts
+ * 
+ * This endpoint is used to run the main() method over an API call. Used for testing locally.
+ * 
+ * @returns {integer} responseCode - HTTP response.
+ */
 app.get("/api/posts", async(req,res)=>{
 	try {
 		main(req.body.groupId)
@@ -72,23 +102,37 @@ app.get("/api/posts", async(req,res)=>{
 	}
 })
 
+/**
+ * The main function is where the execution begins.
+ * First, the posts are obtained from Facebook. Then they're for #greg
+ * If no posts are found, the execution stops until the next time the fuction is called.
+ * 
+ * If posts are found, they are further segregated to place, department(s) and sentiment.
+ * Lastly, the posts are then stored to the DB.
+ * 
+ * The execution stops here until it is run again.
+ * @param {integer} [groupId] - The group ID of the concerned Facebook Group.
+ */
 const main = async(groupId = 210553450180199) => {
 	try {
+		/** Getting the posts from the Facebook Group from the last 1 hour. */
 		const posts = await getFeed(groupId);
 		logger.info(`(index.js)...posts.length = ${posts.length}.`);
 
 		if (posts.length > 0) {
-			
+			/** Getting relevant posts by identifying #greg in the post body. */
 			const filteredGregPosts = await filterGregPosts(posts);
 			logger.info(`(index.js)... greg posts = ${filteredGregPosts.length}`);
 			if(filteredGregPosts.length > 0) {
 				logger.info("(index.js)... Segregating Posts");
 				
+				/** Segregating the post based on the relevant department and sentiment. */
 				const segregatedPosts = await segregate(filteredGregPosts); 
 				
 				logger.info("(index.js)... Storing segregated posts to db");
-		
-				await storePosts(segregatedPosts); //the array of posts is stored to the db
+				
+				/** Storing the relevant posts to the DB, MongoDb Could Atlas */
+				await storePosts(segregatedPosts);
 				logger.info(`(index.js)... Posts saved to DB`);
 			}
 			else if(filteredGregPosts.length == 0) {

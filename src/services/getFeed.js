@@ -1,3 +1,4 @@
+/** @module getFeed */
 require('dotenv').config()
 
 const logger = require('../logger/logger');
@@ -11,6 +12,12 @@ const page_access_token = process.env.PAGE_ACCESS_TOKEN
 
 FB.setAccessToken(page_access_token)
 
+/**
+ * Function to calculate the time in UTC format of the past hour from the current time
+ * 
+ * @returns {string} since - The UTC timestamp of the past hour.
+ * @returns {string} now - The UTC timestamp of the current time.
+ */
 const getTime = () => {
 	let date = new Date().toUTCString()
 	let now = Math.floor(new Date(date).getTime() / 1000)
@@ -21,6 +28,12 @@ const getTime = () => {
 	return {since, now}
 }
 
+/**
+ * This function makes an API call to the Graph API to obtain the posts from the past hour.
+ * 
+ * @param {string} groupId - The group ID of the concerned Facebook Group.
+ * @returns {Promise} posts - The posts received.
+ */
 const getFeed = async (groupId) => {
 	return new Promise((resolve, reject) => {
 	const {since, now} = getTime()
@@ -44,7 +57,14 @@ const getFeed = async (groupId) => {
 							since: since,
 							until: now
 					}
-
+	/**
+	 * Getting feed from the Facebook group
+	 * @param {String} endpoint - The Graph API endpoint to be hit.
+	 * @param {String} request - Type of HTTP request - GET, POST, Patch etc.
+	 * @param {Object} apiParams - The details required to be extracted from Facebook.
+	 * 
+	 * @returns {Object} posts - The posts received.
+	 */
 	FB.api(`/${groupId}/feed`, 'GET', apiParams, res => {
 				if(res.error)
 				{
@@ -77,5 +97,6 @@ const getFeed = async (groupId) => {
 		)
 	})
 }
+
 
 module.exports = getFeed
