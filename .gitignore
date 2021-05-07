@@ -22,6 +22,7 @@ src/test.js
 secrets.json
 out/
 test/
+project-5e-firebase-adminsdk-wk2m9-3ef3f96fa7.json
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
