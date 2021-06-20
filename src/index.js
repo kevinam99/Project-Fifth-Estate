@@ -150,4 +150,3 @@ const main = async(groupId = 210553450180199) => {
 }
 
 main()
-line 60

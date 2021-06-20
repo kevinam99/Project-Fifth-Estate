@@ -51,12 +51,14 @@ const storePosts = async (segregatedPosts) => {
  * @returns {object} Complaint - Contains all the complaints of the given date.
  */
 const fetchPosts = async (date) => {
-  let mongo_uri = process.env.MONGODB_URI
-  mongoose.connect(mongo_uri, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-  })
+  try {
+    connectDB(MONGODB_URI)
+    return Complaint.find({})
+    
+  } catch (error) {
+    logger.error(`(dbConnect.js)... ${error}`)
+    return error
+  }
 
   
 }

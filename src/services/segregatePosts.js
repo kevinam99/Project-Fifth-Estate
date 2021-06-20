@@ -79,7 +79,7 @@ const segregate = async (gregPosts) => {
 		time,
 		link = ``;
 
-	let segreatedPosts = []; //array of posts
+	let segregatedPosts = []; //array of posts
 
 	/**
 	 * Iterating through each post with #greg
@@ -158,11 +158,11 @@ const segregate = async (gregPosts) => {
 			};
 			logger.info(`(segregatePosts.js)... Complaint details: ${JSON.stringify(obj)}`)
 			console.log(obj)
-			segreatedPosts.push(obj);
+			segregatedPosts.push(obj);
 		}
 	});
 	
-	return segreatedPosts;
+	return segregatedPosts;
 };
 
 
