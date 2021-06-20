@@ -26,10 +26,11 @@ app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`);
 });
 
-/**
- * @event POST /
- * 
- */
+app.get('/', (req, res) => {
+	//console.log(req.body)
+	res.sendStatus(200)
+})
+
 app.post('/', (req, res) => {
 	//console.log(req.body)
 	res.sendStatus(200)
