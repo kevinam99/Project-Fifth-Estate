@@ -32,7 +32,7 @@ const connectDB = async(MONGODB_URI) => {
  */
 const storePosts = async (segregatedPosts) => {
     try{
-      await connectDB(MONGODB_URI)
+      connectDB(MONGODB_URI)
       await Complaint.insertMany(segregatedPosts)
       logger.info(`(dbConnect.js)... Complaints saved to DB.`)
     
