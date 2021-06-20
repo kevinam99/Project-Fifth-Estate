@@ -22,6 +22,9 @@ src/test.js
 secrets.json
 out/
 test/
+project-5e-firebase*
+
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

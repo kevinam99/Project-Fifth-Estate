@@ -26,12 +26,13 @@ app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`);
 });
 
-/**
- * @event POST /
- * 
- */
+app.get('/', (req, res) => {
+	//console.log(req.body)
+	res.sendStatus(200)
+})
+
 app.post('/', (req, res) => {
-	console.log(req.body)
+	//console.log(req.body)
 	res.sendStatus(200)
 })
 
@@ -80,7 +81,7 @@ app.get("/api/dbposts", async(req, res) => {
 		logger.info(issues);
 		res.status(200).send(issues);
 	} catch (error) {
-		logger.error(`(index.js, line 60)... ${error}`);
+		logger.error(`(index.js, in GET /api/dbposts)... ${error}`);
 	}
 });
 
@@ -93,12 +94,12 @@ app.get("/api/dbposts", async(req, res) => {
  */
 app.get("/api/posts", async(req,res)=>{
 	try {
-		main(req.body.groupId)
-		res.sendStatus(200)
+		if(!req.body.groupId == "") res.send(main()).status(200)
+		else res.send(main(req.params.groupId)).status(200)
 	}
 	catch(error) {
 		res.status(500).send(error)
-		logger.error(`(index.js, line 68)... ${error}`)
+		logger.error(`(index.js, in GET /api/posts)... ${error}`)
 	}
 })
 
