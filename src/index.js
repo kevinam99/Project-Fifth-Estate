@@ -11,7 +11,7 @@ const {
 	segregate,
 	createNewTag,
 } = require("./services/segregatePosts");
-const { storePosts, fetchPosts } = require("./services/dbConnect");
+const { storePosts, fetchPosts, updateComplaintStatus} = require("./services/dbConnect");
 const logger = require("./logger/logger");
 
 const PORT = process.env.PORT || 5000;
@@ -94,8 +94,8 @@ app.get("/api/dbposts", async(req, res) => {
  */
 app.get("/api/posts", async(req,res)=>{
 	try {
-		if(!req.body.groupId == "") res.send(main()).status(200)
-		else res.send(main(req.params.groupId)).status(200)
+		if(!req.query.groupId == "") res.send(main()).status(200)
+		else res.send(main(req.query.groupId)).status(200)
 	}
 	catch(error) {
 		res.status(500).send(error)
@@ -103,6 +103,24 @@ app.get("/api/posts", async(req,res)=>{
 	}
 })
 
+app.post("/api/updateStatus", async(req, res) => {
+	console.log(req.query.status)
+
+	if(req.query.id && req.query.newStatus) {
+		try {
+			const status = updateComplaintStatus(req.query.id, req.query.newStatus)
+			if(status) res.sendStatus(200)
+		}
+		
+		catch(error) {
+			res.send(error).status(500)
+			logger.error(error)
+		}
+	}
+	else {
+		res.send("All query not received").status(200)
+	}
+})
 /**
  * The main function is where the execution begins.
  * First, the posts are obtained from Facebook. Then they're for #greg

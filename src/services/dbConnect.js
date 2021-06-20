@@ -18,6 +18,7 @@ const connectDB = async(MONGODB_URI) => {
       useNewUrlParser: true,
       useCreateIndex: true,
       useUnifiedTopology: true,
+      useFindAndModify: false
     })
     logger.info("Connected to Mongo Atlas!")
   }
@@ -63,5 +64,31 @@ const fetchPosts = async (date) => {
   
 }
 
+/**
+ * 
+ * This function updates the status of the complaint.
+ * @param {string} id - Post ID within set by MongoDB
+ * @param {string} newStatus - New status (ASSIGNED, PENDING, RESOLVED)
+ * @returns {object} Complaint - Contains all the complaints of the given date.
+ */
+const updateComplaintStatus = async (id, newStatus) => {
+  const doc = {
+    '_id': id
+  }
 
-module.exports = { storePosts, fetchPosts }
+  const updatedDoc = {
+    'status': newStatus
+  }
+  connectDB(MONGODB_URI)
+  try {
+    await Complaint.findOneAndUpdate(doc, updatedDoc, {new: true})
+    return 1
+  }
+  catch(error) {
+    console.error(error)
+    return error
+  }
+}
+
+// updateComplaintStatus("60cf4d5c315b9545acf44b21", "RESOLVED")
+module.exports = { storePosts, fetchPosts , updateComplaintStatus}
