@@ -8,7 +8,7 @@ lerna-debug.log*
 src/package-lock.json
 src/file.json
 src/file2.json
-src/longLived*.json
+longLived*.json
 .env
 file.json
 test.json
@@ -19,6 +19,10 @@ src/uploadPic.js
 src/services/webhook.js
 src/controller.js
 src/test.js
+project-5e*
+test/
+out/
+secrets.json
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 

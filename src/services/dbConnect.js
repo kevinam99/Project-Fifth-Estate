@@ -5,7 +5,7 @@ const logger = require('../logger/logger')
 
 //db connection
 const storePosts = async (segregatedPosts) => {
-  let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`
+  let mongo_uri = process.env.MONGODB_URI
   try {
     await mongoose.connect(mongo_uri, {
       useNewUrlParser: true,
@@ -21,7 +21,7 @@ const storePosts = async (segregatedPosts) => {
   return 1
 }
 const fetchPosts = async (date) => {
-  let mongo_uri = `mongodb+srv://greg:${process.env.MONGO_PASSWORD}@cluster0.adgjc.mongodb.net/demo1?retryWrites=true&w=majority`
+  let mongo_uri = process.env.MONGODB_URI
   mongoose.connect(mongo_uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
