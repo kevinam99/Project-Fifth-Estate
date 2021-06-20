@@ -94,7 +94,8 @@ app.get("/api/dbposts", async(req, res) => {
  */
 app.get("/api/posts", async(req,res)=>{
 	try {
-		main(req.body.groupId)
+		if(!req.body.groupId == "") main()
+		else main(req.params.groupId)
 		res.sendStatus(200)
 	}
 	catch(error) {
