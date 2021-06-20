@@ -19,10 +19,17 @@ src/uploadPic.js
 src/services/webhook.js
 src/controller.js
 src/test.js
+<<<<<<< HEAD
 secrets.json
 out/
 test/
 project-5e-firebase*
+=======
+project-5e*
+test/
+out/
+secrets.json
+>>>>>>> f28f1c3... Fix Mongo Bad Auth error
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
