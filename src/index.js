@@ -81,7 +81,7 @@ app.get("/api/dbposts", async(req, res) => {
 		logger.info(issues);
 		res.status(200).send(issues);
 	} catch (error) {
-		logger.error(`(index.js, line 60)... ${error}`);
+		logger.error(`(index.js, in GET /api/dbposts)... ${error}`);
 	}
 });
 
@@ -94,13 +94,12 @@ app.get("/api/dbposts", async(req, res) => {
  */
 app.get("/api/posts", async(req,res)=>{
 	try {
-		if(!req.body.groupId == "") main()
-		else main(req.params.groupId)
-		res.sendStatus(200)
+		if(!req.body.groupId == "") res.send(main()).status(200)
+		else res.send(main(req.params.groupId)).status(200)
 	}
 	catch(error) {
 		res.status(500).send(error)
-		logger.error(`(index.js, line 68)... ${error}`)
+		logger.error(`(index.js, in GET /api/posts)... ${error}`)
 	}
 })
 
@@ -151,3 +150,4 @@ const main = async(groupId = 210553450180199) => {
 }
 
 main()
+line 60
