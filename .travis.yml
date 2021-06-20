@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - '10'
+  - '12'
+
+env:
+  - workerCount=3 timeout=600000
+
+matrix:
+  fast_finish: true
+
+branches:
+  only:
+  - master
+  - heroku
+  - /^release-.*/
+
+
+install:
+  - npm install
+
+cache:
+  directories:
+    - node_modules
+
+git:
+  depth: 1
