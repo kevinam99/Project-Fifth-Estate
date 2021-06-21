@@ -106,7 +106,7 @@ const loginUser = async(username, password) => {
         if(user) {
             if(await bcrypt.compare(password, user.password)) {
                 console.log(`${username} login successful`)
-                return true
+                return user
                 
             }
         }
