@@ -217,11 +217,13 @@ const updateComplaintStatus = async (id, newStatus) => {
 }
 
 // updateComplaintStatus("60cf4d5c315b9545acf44b21", "RESOLVED")
-module.exports = { 
-    storePosts, 
-    fetchPosts,
+// Export in alphabetic order
+module.exports = {  
     changeUserPassword,
     createUser,
+    fetchPosts,
     loginUser,
-    removeUser, 
-    updateComplaintStatus}
+    removeUser,
+    storePosts,
+    updateComplaintStatus
+}
