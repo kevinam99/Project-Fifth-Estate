@@ -79,7 +79,7 @@ app.get("/api/dbposts", async(req, res) => {
 	logger.info("(index.js)... Fetching Issues from DB")
 	try {
 		const issues = await fetchPosts("2020-10-18");
-		logger.info(issues);
+		// logger.info(issues);
 		res.status(200).send(issues);
 	} catch (error) {
 		logger.error(`(index.js, in GET /api/dbposts)... ${error}`);
