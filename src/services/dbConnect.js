@@ -40,8 +40,8 @@ else if(process.env.NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
  */
 const storePosts = async (segregatedPosts) => {
     try {
-      if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
-      else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
+      // if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+      // else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
       await Complaint.insertMany(segregatedPosts)
       logger.info(`(dbConnect.js)... Complaints saved to DB.`)
      // mongoose.disconnect()
@@ -64,8 +64,8 @@ const storePosts = async (segregatedPosts) => {
  */
 const fetchPosts = async (date) => {
   try {
-    if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
-    else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
+    // if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+    // else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
     const result = Complaint.find({})
    // mongoose.disconnect()
     return result
@@ -93,8 +93,8 @@ const updateComplaintStatus = async (id, newStatus) => {
   const updatedStatus = {
     'status': newStatus
   }
-  if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
-  else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
+  // if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+  // else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
   try {
     await Complaint.findOneAndUpdate(currentId, updatedStatus, {new: true})
    // mongoose.disconnect()
