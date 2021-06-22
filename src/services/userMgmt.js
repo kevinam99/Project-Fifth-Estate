@@ -5,6 +5,13 @@ const User = require('../models/users.model')
 const logger = require('../logger/logger')
 const bcrypt = require('bcrypt')
 
+
+process.on('SIGINT', function() {
+    mongoose.disconnect(function () {
+      console.log('Mongoose disconnected on app termination');
+      process.exit(0);
+    });
+  });
 /**
  * This function helps to connect to MongoDB Cloud Atlas before any post is stored.
  *
@@ -36,15 +43,15 @@ const connectDB = async(MONGODB_URI) => {
 const changeUserPassword = async(username, newPassword) => {
     if(username) {
         try {
-            // // connectDB(process.env.MONGODB_USERS_URI)
+           // connectDB(process.env.MONGODB_USERS_URI)
             const hashedPassword = await bcrypt.hash(newPassword, 8)
             await User.findOneAndUpdate({username}, {password: hashedPassword}, null)
             logger.info(`User ${username}'s password has been updated successfully.`)
-            //// mongoose.disconnect()
+            // mongoose.disconnect()
             return true
         }
         catch(error) {
-            //// mongoose.disconnect()
+            // mongoose.disconnect()
             console.error(`Error when updating user ${username}'s password: ${error}`)
             return false
         }
@@ -66,7 +73,7 @@ const changeUserPassword = async(username, newPassword) => {
  */
 const createUser = async(username, password, role, dept) => {
     if(username && password && role && dept) { 
-        // connectDB(process.env.MONGODB_USERS_URI)
+    //    connectDB(process.env.MONGODB_URI_DEV)
         try {
             const hashedPassword = await bcrypt.hash(password, 8)
             const loginInfo = {
@@ -93,8 +100,11 @@ const createUser = async(username, password, role, dept) => {
     }
 }
 
-// createUser("uname", "password123", "admin", "all")
-// mongoose.disconnect()
+// createUser("kevin", "Greg5e100%", "admin", "all")
+// createUser("aditya", "Greg5e100%", "admin", "all")
+// createUser("minal", "Greg5e100%", "admin", "all")
+// createUser("yash", "Greg5e100%", "admin", "all")
+
 
 /**
  * This function logs in a user to the system.
@@ -105,18 +115,23 @@ const createUser = async(username, password, role, dept) => {
  */
 const loginUser = async(username, password) => {
     try {
-        // connectDB(process.env.MONGODB_USERS_URI)
+    //    connectDB(process.env.MONGODB_URI_DEV)
+        console.log(`Logging in user ${username}`)
         const user = await User.findOne({username})
         if(user) {
             if(await bcrypt.compare(password, user.password)) {
-               // mongoose.disconnect()
+                // mongoose.disconnect()
                 console.log(`${username} login successful`)
                 return user
                 
             }
+            else {
+                console.log(`${username}'s entered password is incorrect`)
+                return "incorrect_password"
+            }
         }
         else if(user == null) {
-           // mongoose.disconnect()
+            // mongoose.disconnect()
             console.log(`User ${username} doesn't exist`)
             return null
         }
@@ -129,8 +144,8 @@ const loginUser = async(username, password) => {
     
 }
 
-// loginUser("username", "pwd1")
-
+// loginUser("usernaem", "passweord123")
+// mongoose.disconnect()
 /**
  * This function removes a user from the DB.
  *
@@ -140,15 +155,15 @@ const loginUser = async(username, password) => {
  */
 const removeUser = async(username) => {
     if (username) {    
-        // connectDB(process.env.MONGODB_USERS_URI)
+       // connectDB(process.env.MONGODB_USERS_URI)
         try {
             await User.findOneAndDelete({ username })
             logger.info(`User ${username} deleted successfully`)
-           // mongoose.disconnect()
+           // // mongoose.disconnect()
             return true
         }
         catch(error) {
-           // mongoose.disconnect()
+            // mongoose.disconnect()
             console.error(error)
             return false
         }

@@ -4,6 +4,12 @@ const mongoose = require('mongoose')
 const Complaint = require('../models/complaint.model')
 const logger = require('../logger/logger')
 
+process.on('SIGINT', function() {
+  mongoose.disconnect(function () {
+    console.log('Mongoose disconnected on app termination');
+    process.exit(0);
+  });
+});
 /**
  * This function helps to connect to MongoDB Cloud Atlas before any post is stored.
  *
