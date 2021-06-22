@@ -100,10 +100,8 @@ const createUser = async(username, password, role, dept) => {
     }
 }
 
-// createUser("kevin", "Greg5e100%", "admin", "all")
-// createUser("aditya", "Greg5e100%", "admin", "all")
-// createUser("minal", "Greg5e100%", "admin", "all")
-// createUser("yash", "Greg5e100%", "admin", "all")
+// createUser("username", "password123", "admin", "all")
+
 
 
 /**
@@ -159,7 +157,7 @@ const removeUser = async(username) => {
         try {
             await User.findOneAndDelete({ username })
             logger.info(`User ${username} deleted successfully`)
-           // // mongoose.disconnect()
+           // mongoose.disconnect()
             return true
         }
         catch(error) {
