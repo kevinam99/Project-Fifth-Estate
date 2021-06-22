@@ -1,0 +1,766 @@
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:53:59.039Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:54:04.355Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:54:05.419Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:54:08.066Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:54:09.187Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:54:13.244Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:54:14.174Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:54:16.196Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:54:17.258Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:54:22.731Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:54:23.743Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:54:26.282Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:54:27.180Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:54:41.352Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:54:57.581Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:55:20.060Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:55:20.981Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:55:22.109Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:57:48.804Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:57:49.820Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:57:51.023Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:57:53.010Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:57:53.965Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:57:55.069Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:57:57.804Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:57:58.751Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:57:59.896Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:58:05.262Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:58:06.133Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:58:07.371Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections {"timestamp":"2021-06-22T03:58:39.330Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:58:55.719Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:58:56.655Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:58:58.151Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:58:59.862Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:59:00.814Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:59:02.617Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:59:03.886Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T03:59:04.732Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:59:15.895Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:59:17.581Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:59:27.766Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:59:28.714Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:59:31.582Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:59:32.534Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T03:59:35.761Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T03:59:36.683Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:03:48.439Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:03:50.802Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:03:52.745Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:03:54.694Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:03:54.883Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:04:02.129Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:04:03.018Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:04:05.280Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:04:06.507Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:04:07.318Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:04:34.790Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:04:35.770Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:04:37.078Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:11.036Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:05:11.896Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:05:13.224Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:35.740Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:37.780Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:05:38.789Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:05:40.493Z"}
+info: User kevin created successfully {"timestamp":"2021-06-22T04:05:40.733Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:46.684Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:48.430Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:05:49.403Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:05:50.453Z"}
+info: User kevin created successfully {"timestamp":"2021-06-22T04:05:50.675Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:52.473Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:05:53.456Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:55.884Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:05:57.927Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:05:58.885Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:06:00.296Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:06:01.272Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:06:03.635Z"}
+info: User kevin created successfully {"timestamp":"2021-06-22T04:06:03.977Z"}
+info: User minal created successfully {"timestamp":"2021-06-22T04:06:04.204Z"}
+info: User aditya created successfully {"timestamp":"2021-06-22T04:06:04.423Z"}
+info: User yash created successfully {"timestamp":"2021-06-22T04:06:04.640Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:06:15.478Z"}
+info: User aditya created successfully {"timestamp":"2021-06-22T04:06:15.706Z"}
+info: User kevin created successfully {"timestamp":"2021-06-22T04:06:15.928Z"}
+info: User minal created successfully {"timestamp":"2021-06-22T04:06:16.149Z"}
+info: User yash created successfully {"timestamp":"2021-06-22T04:06:16.369Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:06:31.622Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:06:32.614Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:06:33.780Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:07:57.555Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:07:58.544Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:07:59.769Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:08:08.615Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:08:26.117Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:08:27.127Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:08:28.313Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:15:29.794Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:15:30.844Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:15:31.969Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 09:46:14 GMT+0530 (India Standard Time)","process":{"pid":11625,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":53133312,"heapTotal":19873792,"heapUsed":14536856,"external":1714317}},"os":{"loadavg":[2.22900390625,1.32958984375,1.16064453125],"uptime":3237},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:16:14.891Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 09:46:22 GMT+0530 (India Standard Time)","process":{"pid":11658,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":51736576,"heapTotal":19873792,"heapUsed":14429240,"external":1706125}},"os":{"loadavg":[2.03955078125,1.31787109375,1.15869140625],"uptime":3244},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:16:22.454Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 09:46:35 GMT+0530 (India Standard Time)","process":{"pid":11715,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":53792768,"heapTotal":19873792,"heapUsed":14480016,"external":1706125}},"os":{"loadavg":[1.9755859375,1.3359375,1.1669921875],"uptime":3258},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:16:35.944Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 09:46:40 GMT+0530 (India Standard Time)","process":{"pid":11744,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52711424,"heapTotal":19873792,"heapUsed":14328960,"external":1697933}},"os":{"loadavg":[1.9755859375,1.3359375,1.1669921875],"uptime":3262},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:16:40.314Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 10:00:47 GMT+0530 (India Standard Time)","process":{"pid":12113,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52862976,"heapTotal":20135936,"heapUsed":14518600,"external":1706125}},"os":{"loadavg":[3.38330078125,1.93310546875,1.38623046875],"uptime":4110},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:30:47.853Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 10:00:48 GMT+0530 (India Standard Time)","process":{"pid":12129,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52744192,"heapTotal":19873792,"heapUsed":14538616,"external":1714317}},"os":{"loadavg":[3.38330078125,1.93310546875,1.38623046875],"uptime":4111},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:30:48.834Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 10:00:50 GMT+0530 (India Standard Time)","process":{"pid":12149,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52924416,"heapTotal":19873792,"heapUsed":14475808,"external":1706125}},"os":{"loadavg":[3.38330078125,1.93310546875,1.38623046875],"uptime":4112},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:30:50.405Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:31:06.352Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10) {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:78:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)","exception":true,"date":"Tue Jun 22 2021 10:01:09 GMT+0530 (India Standard Time)","process":{"pid":12265,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52649984,"heapTotal":19873792,"heapUsed":14475480,"external":1714317}},"os":{"loadavg":[3.193359375,1.97216796875,1.4091796875],"uptime":4131},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":78,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false}],"timestamp":"2021-06-22T04:31:09.535Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:31:27.850Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:31:39.277Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:31:39.283Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:109:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:109:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:01:48 GMT+0530 (India Standard Time)","process":{"pid":12340,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":71405568,"heapTotal":34668544,"heapUsed":24430008,"external":20564644}},"os":{"loadavg":[2.3388671875,1.89794921875,1.40625],"uptime":4170},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":109,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:31:48.661Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:108:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:108:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:01:54 GMT+0530 (India Standard Time)","process":{"pid":12365,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":70971392,"heapTotal":34668544,"heapUsed":24439144,"external":20574903}},"os":{"loadavg":[2.2314453125,1.8828125,1.40380859375],"uptime":4176},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":108,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:31:54.553Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:107:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:107:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:02:09 GMT+0530 (India Standard Time)","process":{"pid":12399,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":66580480,"heapTotal":34406400,"heapUsed":21205480,"external":20005994}},"os":{"loadavg":[2.11328125,1.8720703125,1.408203125],"uptime":4191},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":107,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:32:09.011Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:106:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:106:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:02:14 GMT+0530 (India Standard Time)","process":{"pid":12422,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":68513792,"heapTotal":34144256,"heapUsed":21656648,"external":20266434}},"os":{"loadavg":[2.02392578125,1.857421875,1.40576171875],"uptime":4196},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":106,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:32:14.180Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:107:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:107:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:02:26 GMT+0530 (India Standard Time)","process":{"pid":12459,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":67072000,"heapTotal":34144256,"heapUsed":21668064,"external":20266434}},"os":{"loadavg":[1.8837890625,1.83203125,1.404296875],"uptime":4209},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":107,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:32:26.970Z"}
+error: uncaughtException: changeUserPassword is not defined
+ReferenceError: changeUserPassword is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:107:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: changeUserPassword is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:107:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:02:32 GMT+0530 (India Standard Time)","process":{"pid":12507,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":68009984,"heapTotal":34144256,"heapUsed":21650176,"external":20266434}},"os":{"loadavg":[2.0537109375,1.8681640625,1.41845703125],"uptime":4214},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":107,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:32:32.649Z"}
+error: uncaughtException: loginUser is not defined
+ReferenceError: loginUser is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:108:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: loginUser is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:108:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:02:42 GMT+0530 (India Standard Time)","process":{"pid":12530,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":66445312,"heapTotal":34144256,"heapUsed":21675224,"external":20266434}},"os":{"loadavg":[1.81787109375,1.82275390625,1.408203125],"uptime":4225},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":108,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:32:42.894Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:32:50.412Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:32:52.444Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:32:52.445Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:33:31.162Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:33:32.197Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:33:33.447Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:33:52.469Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:33:53.468Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:33:55.234Z"}
+error: uncaughtException: chan is not defined
+ReferenceError: chan is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:163:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: chan is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:163:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:03:56 GMT+0530 (India Standard Time)","process":{"pid":12661,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":75239424,"heapTotal":54853632,"heapUsed":21254384,"external":19541037}},"os":{"loadavg":[1.580078125,1.70703125,1.39599609375],"uptime":4298},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js","function":null,"line":163,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:33:56.802Z"}
+error: uncaughtException: crea is not defined
+ReferenceError: crea is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:164:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: crea is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:164:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:04:05 GMT+0530 (India Standard Time)","process":{"pid":12708,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":70631424,"heapTotal":34930688,"heapUsed":24042216,"external":20319166}},"os":{"loadavg":[1.533203125,1.69482421875,1.3935546875],"uptime":4307},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js","function":null,"line":164,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:34:05.321Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:34:09.047Z"}
+error: uncaughtException: logi is not defined
+ReferenceError: logi is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:165:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: logi is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:165:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:04:10 GMT+0530 (India Standard Time)","process":{"pid":12749,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":71270400,"heapTotal":34406400,"heapUsed":24551496,"external":20579622}},"os":{"loadavg":[1.490234375,1.68310546875,1.39111328125],"uptime":4312},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js","function":null,"line":165,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:34:10.735Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:34:21.732Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:34:22.642Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:34:23.903Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:35:33.615Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:35:34.547Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:35:35.789Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:35:39.794Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:35:40.792Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:35:42.863Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:35:43.761Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:35:45.202Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:35:52.494Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:35:54.622Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:35:55.523Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:35:56.692Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:00.903Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:03.287Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:05.454Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:36:06.525Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:08.521Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:10.613Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:36:11.623Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:36:12.679Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:16.912Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:19.466Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:36:21.183Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:36:22.242Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:36:23.327Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections {"timestamp":"2021-06-22T04:36:53.222Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19
+      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+                                                               ^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32) {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19\n      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)\n                                                               ^^^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)","exception":true,"date":"Tue Jun 22 2021 10:08:51 GMT+0530 (India Standard Time)","process":{"pid":13314,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52375552,"heapTotal":19873792,"heapUsed":14431320,"external":1706125}},"os":{"loadavg":[0.74462890625,1.44091796875,1.3935546875],"uptime":4593},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false}],"timestamp":"2021-06-22T04:38:51.557Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19
+      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+                                                               ^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32) {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19\n      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)\n                                                               ^^^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)","exception":true,"date":"Tue Jun 22 2021 10:08:58 GMT+0530 (India Standard Time)","process":{"pid":13356,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52314112,"heapTotal":19873792,"heapUsed":14537432,"external":1714317}},"os":{"loadavg":[0.76513671875,1.43359375,1.39111328125],"uptime":4600},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false}],"timestamp":"2021-06-22T04:38:58.104Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:39:00.623Z"}
+error: uncaughtException: loginUser is not defined
+ReferenceError: loginUser is not defined
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:108:5)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"ReferenceError: loginUser is not defined\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:108:5)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:09:02 GMT+0530 (India Standard Time)","process":{"pid":13400,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":65642496,"heapTotal":34406400,"heapUsed":21217608,"external":20005994}},"os":{"loadavg":[0.8642578125,1.443359375,1.39453125],"uptime":4604},"trace":[{"column":5,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js","function":null,"line":108,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:39:02.056Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19
+      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+                                                               ^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32) {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19\n      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)\n                                                               ^^^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)","exception":true,"date":"Tue Jun 22 2021 10:09:03 GMT+0530 (India Standard Time)","process":{"pid":13417,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":51646464,"heapTotal":19873792,"heapUsed":14513904,"external":1706125}},"os":{"loadavg":[0.8642578125,1.443359375,1.39453125],"uptime":4605},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false}],"timestamp":"2021-06-22T04:39:03.619Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19
+      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+                                                               ^^^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32) {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/dbConnect.js:19\n      useFindAndModify: falsif(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)\n                                                               ^^^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:14:58)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)","exception":true,"date":"Tue Jun 22 2021 10:09:07 GMT+0530 (India Standard Time)","process":{"pid":13439,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":52830208,"heapTotal":19873792,"heapUsed":14476520,"external":1706125}},"os":{"loadavg":[1.19580078125,1.50244140625,1.4140625],"uptime":4610},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":58,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":14,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false}],"timestamp":"2021-06-22T04:39:07.849Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:39:17.951Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:39:19.896Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:39:21.026Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:40:34.583Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:40:36.215Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:40:36.807Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:40:51.296Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:40:52.780Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:40:53.341Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:43:21.039Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:43:22.082Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:43:24.690Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:43:25.722Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:43:26.951Z"}
+error: uncaughtException: Unexpected token '}'
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:109
+       console.log(`Logging in user ${}`)
+                                      ^
+
+SyntaxError: Unexpected token '}'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:109\n       console.log(`Logging in user ${}`)\n                                      ^\n\nSyntaxError: Unexpected token '}'\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:13:30 GMT+0530 (India Standard Time)","process":{"pid":13740,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":66215936,"heapTotal":34406400,"heapUsed":21256704,"external":20010777}},"os":{"loadavg":[0.70068359375,1.06640625,1.25],"uptime":4872},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:43:30.721Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:43:33.611Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:43:34.629Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:43:35.664Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:44:06.793Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:44:07.951Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:44:08.839Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:45:11.685Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:45:13.473Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:45:14.442Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:45:16.274Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:45:17.225Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:45:18.283Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:45:43.345Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:45:44.799Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:45:45.539Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:53:25.749Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:53:26.886Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:53:28.102Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:53:57.872Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"timestamp":"2021-06-22T04:53:57.874Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:53:59.302Z"}
+error: uncaughtException: Unexpected token ')'
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:133
+connectDB(process.env.)
+                      ^
+
+SyntaxError: Unexpected token ')'
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:133\nconnectDB(process.env.)\n                      ^\n\nSyntaxError: Unexpected token ')'\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:24:01 GMT+0530 (India Standard Time)","process":{"pid":14448,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":67125248,"heapTotal":34144256,"heapUsed":21669568,"external":20271250}},"os":{"loadavg":[1.4541015625,1.08642578125,1.11376953125],"uptime":5503},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:54:01.333Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:04.632Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"timestamp":"2021-06-22T04:54:04.634Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:06.124Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"timestamp":"2021-06-22T04:54:06.129Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:54:07.576Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:08.464Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:10.642Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:54:12.722Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:13.011Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:13.012Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:19.759Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:38.089Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:54:39.647Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:41.402Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections {"timestamp":"2021-06-22T04:54:41.404Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:54:42.361Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:43.526Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:52.176Z"}
+error: Error while connecting to Mongo Atlas: MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"timestamp":"2021-06-22T04:54:52.178Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:54:53.388Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:54:55.180Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:54:56.531Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:57.497Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:57.500Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:54:57.810Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118
+            eslse console.log()
+                  ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118\n            eslse console.log()\n                  ^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:25:22 GMT+0530 (India Standard Time)","process":{"pid":14695,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":67796992,"heapTotal":34406400,"heapUsed":21261480,"external":20010813}},"os":{"loadavg":[1.9892578125,1.296875,1.181640625],"uptime":5584},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:55:22.342Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118
+            eslse console.log(``)
+                  ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118\n            eslse console.log(``)\n                  ^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:25:25 GMT+0530 (India Standard Time)","process":{"pid":14717,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":67162112,"heapTotal":34144256,"heapUsed":21609096,"external":20279447}},"os":{"loadavg":[1.9892578125,1.296875,1.181640625],"uptime":5588},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:55:25.958Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118
+            eslse console.log(`${}`)
+                  ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118\n            eslse console.log(`${}`)\n                  ^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:25:27 GMT+0530 (India Standard Time)","process":{"pid":14732,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":66949120,"heapTotal":34144256,"heapUsed":21441608,"external":20252807}},"os":{"loadavg":[2.390625,1.3916015625,1.21337890625],"uptime":5590},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:55:27.962Z"}
+error: uncaughtException: Unexpected identifier
+/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118
+            eslse console.log(`${username}'s entered password is incorrect`)
+                  ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:892:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Module.require (internal/modules/cjs/loader.js:849:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11 {"error":{},"stack":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/services/userMgmt.js:118\n            eslse console.log(`${username}'s entered password is incorrect`)\n                  ^^^^^^^\n\nSyntaxError: Unexpected identifier\n    at Module._compile (internal/modules/cjs/loader.js:892:18)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Module.require (internal/modules/cjs/loader.js:849:19)\n    at require (internal/modules/cjs/helpers.js:74:18)\n    at Object.<anonymous> (/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js:15:67)\n    at Module._compile (internal/modules/cjs/loader.js:956:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)\n    at Module.load (internal/modules/cjs/loader.js:812:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)\n    at internal/main/run_main_module.js:17:11","exception":true,"date":"Tue Jun 22 2021 10:25:36 GMT+0530 (India Standard Time)","process":{"pid":14766,"uid":1000,"gid":1000,"cwd":"/media/kevin/Data/Projects/Project-Fifth-Estate/back","execPath":"/usr/local/bin/node","version":"v12.13.0","argv":["/usr/local/bin/node","/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js"],"memoryUsage":{"rss":66670592,"heapTotal":34406400,"heapUsed":21331520,"external":20244358}},"os":{"loadavg":[2.27880859375,1.384765625,1.2119140625],"uptime":5598},"trace":[{"column":18,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":892,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":849,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":74,"method":null,"native":false},{"column":67,"file":"/media/kevin/Data/Projects/Project-Fifth-Estate/back/src/index.js","function":null,"line":15,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":956,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":973,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":812,"method":"load","native":false},{"column":14,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":724,"method":"_load","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module.runMain","line":1025,"method":"runMain","native":false},{"column":11,"file":"internal/main/run_main_module.js","function":null,"line":17,"method":null,"native":false}],"timestamp":"2021-06-22T04:55:36.344Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T04:55:45.587Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T04:55:47.432Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:55:47.896Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:55:47.897Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:57:23.563Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:57:36.338Z"}
+info: User kevin created successfully {"timestamp":"2021-06-22T04:57:36.571Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:57:50.623Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T04:58:18.425Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:01:25.873Z"}
+info: User kevin created successfully {"timestamp":"2021-06-22T05:01:26.112Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:01:46.789Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:02:41.677Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:02:41.679Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:02:41.680Z"}
+info: User minal created successfully {"timestamp":"2021-06-22T05:02:41.912Z"}
+info: User aditya created successfully {"timestamp":"2021-06-22T05:02:42.138Z"}
+info: User yash created successfully {"timestamp":"2021-06-22T05:02:42.360Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:05:02.161Z"}
+error: Error while connecting to Mongo Atlas: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ {"timestamp":"2021-06-22T05:30:15.508Z"}
+error: Error while connecting to Mongo Atlas: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ {"timestamp":"2021-06-22T05:30:51.561Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:35:51.779Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:37:00.273Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:38:47.690Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:38:48.711Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:38:49.889Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:39:18.998Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:39:19.877Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:39:35.407Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:39:36.434Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:39:37.688Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:39:53.212Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:39:54.215Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:39:55.508Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:39:59.229Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:40:00.137Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:40:01.336Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:48:54.126Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:48:55.089Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:48:56.314Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:56:38.930Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:56:39.886Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:56:41.112Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T05:57:54.559Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T05:57:55.498Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T05:57:56.724Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:05:34.672Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:05:36.847Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:05:37.252Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:06:50.773Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:06:51.912Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:06:53.922Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:06:55.821Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:06:55.965Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:06:57.910Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:06:58.876Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:06:59.957Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:11:04.314Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:11:05.262Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:11:06.409Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:11:31.612Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:11:32.647Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:11:33.700Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:11:49.229Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:11:50.650Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:11:51.310Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:11:52.858Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:11:53.859Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:11:56.125Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:11:57.103Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:11:58.163Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:14:20.875Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:14:21.915Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:14:22.986Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:14:36.839Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:14:37.964Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:14:39.023Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:24:35.082Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:24:36.960Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:24:37.202Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:24:39.801Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:24:41.215Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:24:41.887Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:24:43.809Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:24:46.435Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:24:48.431Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:24:48.526Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:25:06.330Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:25:07.347Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:25:08.425Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:36:17.354Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:36:19.881Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:36:20.815Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:36:21.981Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:53:01.524Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:53:02.468Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:53:03.741Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:54:57.203Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:54:58.211Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:54:59.609Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T06:55:52.193Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T06:55:53.213Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T06:55:54.513Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T07:15:43.056Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T07:15:44.143Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T07:15:45.535Z"}
+info: (index.js)... Listening on port 5000 {"timestamp":"2021-06-22T08:14:26.865Z"}
+info: (getFeed.js)... No posts available at this time {"timestamp":"2021-06-22T08:14:27.988Z"}
+info: Connected to Mongo Atlas! {"timestamp":"2021-06-22T08:14:29.137Z"}
