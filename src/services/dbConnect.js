@@ -47,6 +47,7 @@ const changeUserPassword = async(username, newPassword) => {
             console.error(`Error when updating user ${username}'s password: ${error}`)
             return false
         }
+        mongoose.disconnect()
     }
     else console.log("Enter a username")
 }
@@ -81,7 +82,7 @@ const createUser = async(username, password, role, dept) => {
             console.error(error)
             return false
         }
-    
+        mongoose.disconnect()
     }
 
     else {
@@ -112,8 +113,9 @@ const loginUser = async(username, password) => {
         }
         else if(user == null) {
             console.log(`${username} login unsuccessful`)
-            return false
+            return null
         }
+        mongoose.disconnect()
     }
     catch(error) {
         console.error(`Error while loggin in user ${username}: ${error}`)
@@ -143,6 +145,7 @@ const removeUser = async(username) => {
             console.error(error)
             return false
         }
+        mongoose.disconnect()
     }
 
     else console.log("No username received to delete.")
@@ -160,11 +163,13 @@ const storePosts = async (segregatedPosts) => {
       else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
       await Complaint.insertMany(segregatedPosts)
       logger.info(`(dbConnect.js)... Complaints saved to DB.`)
+      mongoose.disconnect()
     
   } catch (error) {
     logger.error(`(dbConnect.js)... ${error}`)
     return error
   }
+  
   return 1
 }
 
@@ -185,6 +190,7 @@ const fetchPosts = async (date) => {
     logger.error(`(dbConnect.js)... ${error}`)
     return error
   }
+  mongoose.disconnect()
 
   
 }
@@ -208,6 +214,7 @@ const updateComplaintStatus = async (id, newStatus) => {
   else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
   try {
     await Complaint.findOneAndUpdate(currentId, updatedStatus, {new: true})
+    mongoose.disconnect()
     return true
   }
   catch(error) {
