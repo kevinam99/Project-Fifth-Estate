@@ -4,8 +4,12 @@ const mongoose = require('mongoose')
 const Complaint = require('../models/complaint.model')
 const logger = require('../logger/logger')
 
-const MONGODB_URI = process.env.MONGODB_URI
-
+process.on('SIGINT', function() {
+  mongoose.disconnect(function () {
+    console.log('Mongoose disconnected on app termination');
+    process.exit(0);
+  });
+});
 /**
  * This function helps to connect to MongoDB Cloud Atlas before any post is stored.
  *
@@ -26,21 +30,28 @@ const connectDB = async(MONGODB_URI) => {
     logger.error(`Error while connecting to Mongo Atlas: ${error}`)
   }
 }
+if(process.env.NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+else if(process.env.NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
+
 /** 
  * This fuction stores the posts to the DB.
  * @param {object} segregatedPosts - Contains the relevant posts with #greg along with the department and sentiment of the post.
  * 
  */
 const storePosts = async (segregatedPosts) => {
-    try{
-      connectDB(MONGODB_URI)
+    try {
+      if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+      else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
       await Complaint.insertMany(segregatedPosts)
       logger.info(`(dbConnect.js)... Complaints saved to DB.`)
+     // mongoose.disconnect()
     
   } catch (error) {
+   // mongoose.disconnect()
     logger.error(`(dbConnect.js)... ${error}`)
     return error
   }
+  
   return 1
 }
 
@@ -53,14 +64,17 @@ const storePosts = async (segregatedPosts) => {
  */
 const fetchPosts = async (date) => {
   try {
-    connectDB(MONGODB_URI)
-    return Complaint.find({})
+    if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+    else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
+    const result = Complaint.find({})
+   // mongoose.disconnect()
+    return result
     
   } catch (error) {
+    // mongoose.disconnect()
     logger.error(`(dbConnect.js)... ${error}`)
     return error
   }
-
   
 }
 
@@ -69,26 +83,34 @@ const fetchPosts = async (date) => {
  * This function updates the status of the complaint.
  * @param {string} id - Post ID within set by MongoDB
  * @param {string} newStatus - New status (ASSIGNED, PENDING, RESOLVED)
- * @returns {object} Complaint - Contains all the complaints of the given date.
+ * @returns {boolean}
  */
 const updateComplaintStatus = async (id, newStatus) => {
-  const doc = {
+  const currentId = {
     '_id': id
   }
 
-  const updatedDoc = {
+  const updatedStatus = {
     'status': newStatus
   }
-  connectDB(MONGODB_URI)
+  if(NODE_ENV === 'dev') connectDB(process.env.MONGODB_URI_DEV)
+  else if(NODE_ENV === 'prod') connectDB(process.env.MONGODB_URI_PROD)
   try {
-    await Complaint.findOneAndUpdate(doc, updatedDoc, {new: true})
-    return 1
+    await Complaint.findOneAndUpdate(currentId, updatedStatus, {new: true})
+   // mongoose.disconnect()
+    return true
   }
   catch(error) {
     console.error(error)
+   // mongoose.disconnect()
     return error
   }
 }
 
 // updateComplaintStatus("60cf4d5c315b9545acf44b21", "RESOLVED")
-module.exports = { storePosts, fetchPosts , updateComplaintStatus}
+// Export in alphabetic order
+module.exports = {  
+    fetchPosts,
+    storePosts,
+    updateComplaintStatus
+}

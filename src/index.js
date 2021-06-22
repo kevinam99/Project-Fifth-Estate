@@ -12,6 +12,7 @@ const {
 	createNewTag,
 } = require("./services/segregatePosts");
 const { storePosts, fetchPosts, updateComplaintStatus} = require("./services/dbConnect");
+const { changeUserPassword, createUser, loginUser, removeUser } = require("./services/userMgmt");
 const logger = require("./logger/logger");
 
 const PORT = process.env.PORT || 5000;
@@ -121,6 +122,33 @@ app.post("/api/updateStatus", async(req, res) => {
 		res.send("All query not received").status(200)
 	}
 })
+
+
+app.post("/api/login", async(req, res) => {
+	const username = req.body.username
+	const password = req.body.password
+	return res.send(await loginUser(username, password)).status(200)
+})
+
+app.post("/api/createUser", async(req, res) => {
+	const username = req.body.username
+	const password = req.body.password
+	const role = req.body.role
+	const dept = req.body.role
+	return res.send(await createUser(username, password, role, dept)).status(200)
+})
+
+app.post("/api/removeUser", async(req, res) => {
+	const username = req.body.username
+	return res.send(await removeUser(username)).status(200)
+})
+
+app.post("/api/forgotPassword", async(req, res) => {
+	const username = req.body.username
+	const password = req.body.password
+	return res.send(await changeUserPassword(username, password)).status(200)
+})
+
 /**
  * The main function is where the execution begins.
  * First, the posts are obtained from Facebook. Then they're for #greg
