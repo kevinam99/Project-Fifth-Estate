@@ -28,13 +28,13 @@ app.use(cors());
 FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
-// app.listen(PORT, () => {
-// 	logger.info(`(index.js)... Listening on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+	logger.info(`(index.js)... Listening on port ${PORT}`);
+});
 
-const httpsServer = https.createServer(credentials, app);
-httpsServer.listen(PORT);
-logger.info(`(index.js)... Listening on port ${PORT}`);
+// const httpsServer = https.createServer(credentials, app);
+// httpsServer.listen(PORT);
+// logger.info(`(index.js)... Listening on port ${PORT}`);
 app.get('/', (req, res) => {
 	//console.log(req.body)
 	res.sendStatus(200)
