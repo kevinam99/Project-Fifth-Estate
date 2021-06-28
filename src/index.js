@@ -116,7 +116,7 @@ app.get("/api/posts", async(req,res)=>{
 })
 
 app.post("/api/updateStatus", async(req, res) => {
-	console.log(req.query.status)
+	logger.info(req.query)
 
 	if(req.query.id && req.query.newStatus) {
 		try {
