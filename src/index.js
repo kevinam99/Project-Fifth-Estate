@@ -16,7 +16,7 @@ const {
 	segregate,
 	createNewTag,
 } = require("./services/segregatePosts");
-const { storePosts, fetchPosts, updateComplaintStatus} = require("./services/dbConnect");
+const { fetchPosts, sigintHandle, storePosts, updateComplaintStatus} = require("./services/dbConnect");
 const { changeUserPassword, createUser, loginUser, removeUser } = require("./services/userMgmt");
 const logger = require("./logger/logger");
 
@@ -28,6 +28,9 @@ app.use(cors());
 FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
+process.on('SIGINT', () => {
+	sigintHandle()
+});
 app.listen(PORT, () => {
 	logger.info(`(index.js)... Listening on port ${PORT}`);
 });

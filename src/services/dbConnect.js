@@ -4,11 +4,14 @@ const mongoose = require('mongoose')
 const Complaint = require('../models/complaint.model')
 const logger = require('../logger/logger')
 
-process.on('SIGINT', function() {
-  mongoose.disconnect(function () {
-    console.log('Mongoose disconnected on app termination');
-    process.exit(0);
+const sigintHandle = () => {
+	mongoose.disconnect(function () {
+	    console.log('Mongoose disconnected on app termination');
+	    process.exit(0);
   });
+}
+process.on('SIGINT', function() {
+  sigintHandle();
 });
 /**
  * This function helps to connect to MongoDB Cloud Atlas before any post is stored.
@@ -111,6 +114,7 @@ const updateComplaintStatus = async (id, newStatus) => {
 // Export in alphabetic order
 module.exports = {  
     fetchPosts,
+    sigintHandle,
     storePosts,
     updateComplaintStatus
 }
