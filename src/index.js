@@ -1,6 +1,11 @@
 /** @module index */
 require("dotenv").config();
 const FB = require("fb").default;
+const https = require('https');
+const fs = require("fs")
+const privateKey  = fs.readFileSync(`${__dirname}/../sslcert/server.key`, 'utf8');
+const certificate = fs.readFileSync(`${__dirname}/../sslcert/server.crt`, 'utf8');
+const credentials = {key: privateKey, cert: certificate};
 const app = require("express")();
 const bodyParser = require("body-parser");
 const cors = require('cors')
@@ -23,10 +28,13 @@ app.use(cors());
 FB.options({ version: process.env.API_VERSION });
 FB.extend({ appId: process.env.APP_ID, appSecret: process.env.APP_SECRET });
 
-app.listen(PORT, () => {
-	logger.info(`(index.js)... Listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+// 	logger.info(`(index.js)... Listening on port ${PORT}`);
+// });
 
+const httpsServer = https.createServer(credentials, app);
+httpsServer.listen(PORT);
+logger.info(`(index.js)... Listening on port ${PORT}`);
 app.get('/', (req, res) => {
 	//console.log(req.body)
 	res.sendStatus(200)
