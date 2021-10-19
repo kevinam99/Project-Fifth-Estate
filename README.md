@@ -15,6 +15,8 @@ This is the backend repo that contains the implementation of our ([Aditya](https
 
 We don't intend to continue developing this project further since all of us working full time jobs, however, PRs are always welcome 🎉. Please email any one of us when you do open a PR.
 
+
+## License
 MIT License
 
 Copyright (c) 2021 Project Fifth Estate
