@@ -1,6 +1,6 @@
 # Project-Fifth-Estate
 
-This is the backend repo that contains the implementation of our ([Aditya](https://github.com/adityachanekar), [Minal](https://github.com/Minal72/) and [Kevin](https://github.com/kevinam99)) final year engineering project, the Smart Public Greivance Registration System a.k.a Greg.
+This is the backend repo that contains the implementation of our ([Aditya](https://github.com/adityachanekar), [Minal](https://github.com/Minal72/) and [Kevin](https://github.com/kevinam99)) final year engineering project, a social media based complaint tracking and aggregation system. a.k.a Greg.
 
 Find the UI repo [here](https://github.com/Minal72/Front-end-vue).
 
