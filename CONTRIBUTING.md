@@ -14,7 +14,7 @@ This branch has the most updated version of the code. This was first created bec
 
 Any other branches are just created to test approaches, features etc and are in no way related to the above branches yet.
 
-This is the branch production branch and any commits to this branch will trigger a build on Travis and upon passing the build, it will be deployed to Heroku.
+This is the production branch and any commits to this branch will trigger a build on Travis and upon passing the build, it will be deployed to Heroku.
 The [src/services](./src/services/) folder contains the codes that perform the actions.
 
 We don't intend to continue developing this project further since all of us working full time jobs, however, PRs are always welcome 🎉. Please email any one of us when you do open a PR.
