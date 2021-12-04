@@ -174,7 +174,7 @@ const main = async(groupId = 210553450180199) => {
 			
 		}
 	} catch (err) {
-		logger.error(`(index.js)... Error: ${err}`);
+		logger.error(`(index.js)... Error: ${JSON.stringify(err)}`);
 	}
 }
 
