@@ -6,7 +6,7 @@
   "dependencies": {
     "Sentimental": "^1.0.1",
     "dotenv": "^8.2.0",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "fb": "^2.0.0"
   },
   "devDependencies": {},
